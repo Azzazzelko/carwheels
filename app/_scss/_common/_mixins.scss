@@ -1,0 +1,36 @@
+// $map : sprite-map('icons/*.png', $spacing: 70px);
+
+@mixin get-sprite($map, $icon) {
+	$sprite-image: sprite-file($map, $icon);
+	$sprite-url: sprite-url($map);
+	$sprite-position: sprite-position($map, $icon);
+
+	background: $sprite-url $sprite-position no-repeat;
+
+	$sprite-height: image-height($sprite-image);
+	$sprite-width: image-width($sprite-image);
+
+	width: $sprite-width;
+	height: $sprite-height;
+} 
+
+@mixin font($font) {
+	@if $font == reg {
+		font-family: 'opensans-regular';
+	} @elseif $font == semi {
+		font-family: 'opensans-semibold';
+	} @elseif $font == bold {
+		font-family: 'opensans-bold';
+	} @elseif $font == light {
+		font-family: 'opensans-light';
+	}
+}
+
+@mixin linksHover() {
+	transition: all .3s ease-in-out;
+	opacity: 1;
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
