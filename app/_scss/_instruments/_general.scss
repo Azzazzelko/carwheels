@@ -34,7 +34,7 @@ html, body {
 body {
 	display: table;
 	line-height: normal;
-	// font-family: 'raleway_regular';
+	@include font(reg);
 }
 
 

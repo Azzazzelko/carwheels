@@ -1,3 +1,7 @@
+$orange : #fcbf0f;
+$red : #ff2f19;
+$blue : #264ba6;
+
 %icons { 		
 	position: absolute;
 	display: block;
@@ -21,5 +25,5 @@
 	transform: translate(-50%,-50%); 
 }
 
-// @include get-sprite($cabinet-spr, arrow);
-//$header-spr : sprite-map('icons-header/*.png' , $spacing: 70px);
+// @include get-sprite($main-spr, arrow);
+$main-spr : sprite-map('main-icons/*.png' , $spacing: 70px);

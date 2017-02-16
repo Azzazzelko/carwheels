@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Главная</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/select2.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -73,6 +75,102 @@
 	</header>
 
 	<main class="main">
+		<section class="selection-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-4">
+						<ul class="selection-tabs-list" role="tablist">
+							<li role="presentation" class="active selection-tabs-item">
+								<a href="#parametrs" aria-controls="home" role="tab" data-toggle="tab">Подбор по параметрам</a>
+							</li>
+							<li role="presentation" class="selection-tabs-item">
+								<a href="#model" aria-controls="home" role="tab" data-toggle="tab">Подбор по марке авто</a>
+							</li>
+						</ul>
+						<a href="#" class="selection-block__help-button pull-right">Помощь</a>
+					</div>
+				</div>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active row" id="parametrs">
+						<div class="col-sm-4">
+							<div class="tab-pane__left">
+								
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="tab-pane__right">
+								<ul class="tab-right__list">
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Ширина:</div>
+										<select name="width" class="select select_small">
+											<option value="195">195</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Профиль:</div>
+										<select name="profile" class="select select_small">
+											<option value="65">65</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Диаметр:</div>
+										<select name="diametr" class="select select_small">
+											<option value="r15">R15</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Сезонность:</div>
+										<select name="season" class="select select_normal">
+											<option value="winter">зима</option>
+											<option value="summer">лето</option>
+										</select>
+									</li>
+								</ul>
+								<div class="tab-right__drop-list">
+									<div class="dropdown">
+										<a href="#" class="dropdown-toggle tab-right__drop-list-btn"></a>
+										<div class="dropdown-menu">
+											<form action="#" class="tab-selection-form">
+												123
+											</form>
+										</div>
+									</div>
+
+									<a href="#" class="tab-pane__pick-up-btn">Подобрать</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane row" id="model">
+						<div class="col-sm-4">
+							<div class="tab-pane__left">
+								
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="tab-pane__right">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
 	</main>
 
 	<footer class="footer">
@@ -80,6 +178,7 @@
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/select2.full.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
