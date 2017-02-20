@@ -371,9 +371,9 @@
 }
 
 .tab-right__list {
+	flex-wrap: wrap;
 	width: 100%;
 	font-size: 0;
-	margin-bottom: 25px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -385,7 +385,7 @@
 
 .tab-right__item {
 	display: inline-block;
-	margin-right: 24px;
+	margin-bottom: 25px;
 
 	&:last-child {
 		margin-right: 0;
@@ -407,6 +407,16 @@
 
 .tab-right__drop-list-drop-container {
 	display: inline-block;
+
+	&.open {
+		.tab-right__drop-list-btn,
+		.tab-right__drop-list-btn:hover,
+		.tab-right__drop-list-btn:focus {
+			&:after {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
 }
 
 .tab-right__drop-list-btn,
@@ -934,7 +944,7 @@
 .expert-block {
 	.expert-block__top {
 		.container {
-			padding: 45px 480px 85px 0;
+			padding: 45px 480px 85px 15px;
 		}
 	}
 }
@@ -1239,15 +1249,16 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 90%;
+	width: 920px;
 }
 
 .help-modal__btn,
 .help-modal__btn:hover,
 .help-modal__btn:focus {
 	position: absolute;
-    top: 25px;
-    right: 30px;
-    padding: 5px;
+	top: 25px;
+	right: 30px;
+	padding: 5px;
 	background: #fff;
 	font-size: 16px;
 	text-transform: uppercase;

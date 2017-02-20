@@ -1,0 +1,269 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+	.header-nav__item {
+		margin-right: 60px;
+	}
+
+	.selection-block__help-button, .selection-block__help-button:hover, .selection-block__help-button:focus {
+		margin-right: 0;
+	}
+
+	.select_small + .select2-container {
+		width: 115px !important;
+	}
+
+	.select_normal + .select2-container {
+		width: 185px !important;
+	}
+
+	.tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
+		width: 403px;
+	}
+
+	.tab-pane__pick-up-btn, .tab-pane__pick-up-btn:hover, .tab-pane__pick-up-btn:focus {
+		width: 185px;
+	}
+
+	.tab-pane__left-img.img-wheel {
+		margin-left: -300px;
+	}
+
+	.tab-pane__left-img.img-car {
+		margin-left: -250px;
+	}
+
+	.tab-right__drop-list-drop-container .dropdown-menu {
+		left: -132px;
+	}
+
+	.select_big + .select2-container {
+		width: 282px !important;
+	}
+
+	.tab-pane__left-img.img-disk {
+		margin-left: -30px;
+	}
+
+	.slogan-block .container {
+		padding-right: 475px;
+	}
+
+	.slogan-block__img-container {
+		right: 5px;
+	}
+
+	.hits-block__item-buy-btn, .hits-block__item-buy-btn:hover, .hits-block__item-buy-btn:focus {
+		width: 75px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+
+	.hits-block__item-price {
+		font-size: 23px;
+	}
+
+	.hits-block__item-price .currency {
+		font-size: 13px;
+	}
+
+	.news-block__desctiption {
+		font-size: 15px;
+	}
+
+	.expert-block .expert-block__top .container {
+		padding-right: 370px;
+	}
+
+	.footer-top__logo, .footer-top__logo:hover, .footer-top__logo:focus {
+		width: 225px;
+	}
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+	.header-nav__item {
+		font-size: 16px;
+		margin-right: 30px;
+	}
+
+	.selection-tabs-list {
+		width: 70%;
+	}
+
+	.tab-right__list {
+		flex-wrap: wrap;
+	}
+
+	.tab-right__item {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.select_small + .select2-container {
+		width: 200px !important;
+	}
+
+	.select_normal + .select2-container {
+		width: 200px !important;
+	}
+
+	.tab-right__list {
+		margin-bottom: 5px;
+	}
+
+	.tab-pane__right {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+	.tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
+		width: 260px;
+	}
+
+	.tab-right__drop-list-drop-container .dropdown-menu {
+		left: -265px;
+		width: 735px;
+	}
+
+	.tab-pane__pick-up-btn, .tab-pane__pick-up-btn:hover, .tab-pane__pick-up-btn:focus {
+		width: 200px;
+		margin-top: 10px;
+	}
+
+	.select_big + .select2-container {
+		width: 470px !important;
+	}
+
+	.tab-pane__left-img.img-disk {
+		margin-left: -90px;
+	}
+
+	.tab-pane__left-img.img-car {
+		margin-left: -290px;
+		padding-bottom: 50px;
+	}
+
+	.tab-pane__left-img.img-wheel {
+		margin-left: -370px;
+	}
+
+	.advantages-block {
+		padding: 70px 0 70px;
+	}
+
+	.advantages-block__list {
+		justify-content: space-between;
+	}
+
+	.advantages-block__text {
+		font-size: 15px;
+	}
+
+	.slogan-block .container {
+		padding: 80px 320px 45px 50px;
+	}
+
+	.slogan-block__title {
+		font-size: 32px;
+	}
+
+	.slogan-block__description {
+		font-size: 22px;
+	}
+
+	.slogan-block__img-container {
+		right: -75px;
+		transform: scale(0.7);
+		bottom: -100px;
+	}
+
+	.hits-block {
+		padding: 150px 0 50px;
+	}
+
+	.hits-block__list {
+		padding: 0 100px;
+	}
+
+	.hits-block__item {
+		margin-bottom: 30px;
+	}
+
+	.expert-block__info {
+		padding-left: 85px;
+	}
+
+	.expert-block__tel {
+		font-size: 25px;
+	}
+
+	.expert-block__img-container {
+		bottom: -40px;
+		right: -80px;
+		transform: scale(0.9);
+	}
+
+	.expert-block .expert-block__top .container {
+		padding-right: 340px;
+	}
+
+	.seo-block__title {
+		font-size: 25px;
+	}
+
+	.seo-block__title_h3 {
+		font-size: 22px;
+	}
+
+	.footer-top__col_disks:before {
+		top: -20px;
+		transform: scale(0.8);
+	}
+
+	.footer-top__col_wheels:before {
+		top: -20px;
+		transform: scale(0.8);
+	}
+
+	.footer-top__col_wheels {
+		max-width: 32%;
+		padding-left: 110px;
+	}
+
+	.footer-top__col_disks {
+		padding-left: 120px;
+	}
+
+	.footer-top {
+		flex-wrap: wrap;
+	}
+
+	.footer-top__items-item {
+		font-size: 15px;
+	}
+
+	.footer-top__adress-item {
+		font-size: 13px;
+	}
+
+	.footer-top__logo, .footer-top__logo:hover, .footer-top__logo:focus {
+		width: 200px;
+		font-size: 23px;
+	}
+
+	.footer-top__nav-list {
+		padding-right: 0;
+		padding-top: 35px;
+	}
+
+	.footer-top__nav-item {
+		display: inline-block;
+		margin-right: 30px;
+	}
+}
+
+/* sm */
+@media screen and (max-width: 767px) {
+	
+}
