@@ -37,4 +37,13 @@ $(function() {
 		$this.parent().parent().find('input').attr('checked', false);
 	});
 
+	/* main hits owl */
+	$('.owl-hits-slider').owlCarousel({
+		margin:50,
+		items:1,
+		nav:true,
+		dots:false,
+		singleItem : true
+	});
+
 }());

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,7 +23,7 @@
 		<div class="header-top">
 			<div class="container">
 				<div class="header-top__info">
-					<span class="header-top__info-title">Режим работы:</span>
+					<span class="header-top__info-title hidden-xs">Режим работы:</span>
 					<span class="header-top__info-description">пн - Сб:  8:00 -20:00</span>
 					<span class="header-top__info-description">ВС:  9:00 -16:00</span>
 				</div>
@@ -37,7 +38,7 @@
 				<a href="#" class="header-middle__basket pull-right">
 					<div class="header-middle__basket-circle"></div>
 					<div class="header-middle__basket-count">1</div>
-					<div class="header-middle__basket-text">Корзина</div>
+					<div class="header-middle__basket-text hidden-xs">Корзина</div>
 				</a>
 
 				<div class="header-middle__info pull-right">
@@ -48,7 +49,7 @@
 		</div>
 		<div class="header-bottom">
 			<div class="container">
-				<nav class="header-bottom__nav">
+				<nav class="header-bottom__nav hidden-xs">
 					<ul class="header-nav__list">
 						<li class="header-nav__item">
 							<a href="#" class="header-nav__link">Шины</a>
@@ -67,6 +68,98 @@
 						</li>
 						<li class="header-nav__item">
 							<a href="#" class="header-nav__link">контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="header-bottom__mobile-nav visible-xs">
+					<ul class="header-mobile-nav__list">
+						<li class="header-mobile-nav__item">
+							<div class="header-mobile-nav__dropdown dropdown">
+								<a href="#" class="header-mobile-nav__menu-btn" data-toggle="dropdown">
+									<div class="header-mobile-nav__manu-burger">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</div>
+									<span class="header-mobile-nav__item-text">Меню</span>
+								</a>
+								<div class="dropdown-menu mobile-nav__dropdown">
+									<a href="#" class="header-mobile-nav__close-drop" data-toggle="dropdown">
+									</a>
+
+									<div class="mobile-nav__dropdown-title">Шины</div>
+									<ul class="mobile-nav__dropdown-list">
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по параметрам</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по марке авто</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">летние шины</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">зимние шины</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">шинный калькулятор</a>
+										</li>
+									</ul>
+
+									<div class="mobile-nav__dropdown-title">Диски</div>
+									<ul class="mobile-nav__dropdown-list">
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по параметрам</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по марке авто</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">литые диски</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">штампованные диски</a>
+										</li>
+									</ul>
+
+									<ul class="mobile-nav__dropdown-menu-list">
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">доставка</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">оплата</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">гарантии</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">контакты</a>
+										</li>
+									</ul>
+
+									<div class="dropdown-menu__bottom">
+										<div class="dropdown-menu__bottom-title">Режим работы:</div>
+										<ul class="dropdown-menu__bottom-list">
+											<li class="dropdown-menu__bottom-item">
+												пн - Сб:  8:00 -20:00
+											</li>
+											<li class="dropdown-menu__bottom-item">
+												ВС:  9:00 -16:00
+											</li>
+										</ul>
+										<div class="dropdown-menu__bottom-info">
+											<div class="dropdown-menu__bottom-info-tel">+375 (29) 555 55 55</div>
+											<div class="dropdown-menu__bottom-info-tel">+375 (29) 555 55 55</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="header-mobile-nav__item">
+							<a href="#" class="header-mobile-nav__link">Шины</a>
+						</li>
+						<li class="header-mobile-nav__item">
+							<a href="#" class="header-mobile-nav__link">Диски</a>
 						</li>
 					</ul>
 				</nav>
@@ -94,7 +187,7 @@
 				<!-- wheels -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active row" id="parametrs">
-						<div class="col-sm-4 tab-pane__left-container">
+						<div class="col-sm-4 tab-pane__left-container hidden-xs">
 							<div class="tab-pane__left">
 								<div class="tab-pane__left-img-container img-container">
 									<img src="images/wheel.png" alt="img" class="img-responsive tab-pane__left-img img-wheel">
@@ -355,7 +448,7 @@
 					</div>
 
 					<div role="tabpanel" class="tab-pane row" id="model">
-						<div class="col-sm-4 tab-pane__left-container">
+						<div class="col-sm-4 tab-pane__left-container hidden-xs">
 							<div class="tab-pane__left">
 								<div class="tab-pane__left-img-container img-container">
 									<img src="images/car.png" alt="img" class="img-responsive tab-pane__left-img img-car">
@@ -427,7 +520,7 @@
 				<!-- disks -->
 <!-- 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active row" id="parametrs">
-						<div class="col-sm-4 tab-pane__left-container">
+						<div class="col-sm-4 tab-pane__left-container hidden-xs">
 							<div class="tab-pane__left">
 								<div class="tab-pane__left-img-container img-container">
 									<img src="images/param-disc-img.png" alt="img" class="img-responsive tab-pane__left-img img-disk">
@@ -717,7 +810,7 @@
 					</div>
 
 					<div role="tabpanel" class="tab-pane row" id="model">
-						<div class="col-sm-4 tab-pane__left-container">
+						<div class="col-sm-4 tab-pane__left-container hidden-xs">
 							<div class="tab-pane__left">
 								<div class="tab-pane__left-img-container img-container">
 									<img src="images/car.png" alt="img" class="img-responsive tab-pane__left-img img-car">
@@ -827,7 +920,7 @@
 			</div>
 		</section>
 
-		<section class="hits-block">
+		<section class="hits-block hidden-xs">
 			<div class="container">
 				<h2 class="hits-block__title">Хиты продаж</h2>
 				<ul class="hits-block__list row">
@@ -932,6 +1025,116 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+		</section>
+
+		<section class="hits-block-mobile visible-xs">
+			<div class="container">
+				<h2 class="hits-block__title hits-block-mobile__title">Хиты продаж</h2>
+				<div class="hits-block-mobile__owl-container">
+					<div class="owl-carousel owl-hits-slider">
+						<div>
+							<div class="hits-block__item">
+								<div class="hits-block__item-title">Амтел</div>
+								<div class="hits-block__item-description">Planet Evo</div>
+								<div class="hits-block__item_img-container img-responsive sun">
+									<img src="images/hits-img.png" alt="img" class="hits-block__item-img img-responsive">
+								</div>
+								<div class="hits-block__item-img-text">205/65 R15 94 H</div>
+								<div class="hits-block__item-middle">
+									<span class="hits-block__item-count">Количество:</span>
+									<select name="hits_count" class="select hits-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="hits-block__item-bottom">
+									<div class="hits-block__item-price">
+										95.55 <span class="currency">Руб.</span>
+									</div>
+									<a href="#" class="btn_red hits-block__item-buy-btn">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="hits-block__item">
+								<div class="hits-block__item-title">Амтел</div>
+								<div class="hits-block__item-description">Planet Evo</div>
+								<div class="hits-block__item_img-container img-responsive sun">
+									<img src="images/hits-img.png" alt="img" class="hits-block__item-img img-responsive">
+								</div>
+								<div class="hits-block__item-img-text">205/65 R15 94 H</div>
+								<div class="hits-block__item-middle">
+									<span class="hits-block__item-count">Количество:</span>
+									<select name="hits_count" class="select hits-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="hits-block__item-bottom">
+									<div class="hits-block__item-price">
+										95.55 <span class="currency">Руб.</span>
+									</div>
+									<a href="#" class="btn_red hits-block__item-buy-btn">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="hits-block__item">
+								<div class="hits-block__item-title">Амтел</div>
+								<div class="hits-block__item-description">Planet Evo</div>
+								<div class="hits-block__item_img-container img-responsive sun">
+									<img src="images/hits-img.png" alt="img" class="hits-block__item-img img-responsive">
+								</div>
+								<div class="hits-block__item-img-text">205/65 R15 94 H</div>
+								<div class="hits-block__item-middle">
+									<span class="hits-block__item-count">Количество:</span>
+									<select name="hits_count" class="select hits-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="hits-block__item-bottom">
+									<div class="hits-block__item-price">
+										95.55 <span class="currency">Руб.</span>
+									</div>
+									<a href="#" class="btn_red hits-block__item-buy-btn">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="hits-block__item">
+								<div class="hits-block__item-title">Амтел</div>
+								<div class="hits-block__item-description">Planet Evo</div>
+								<div class="hits-block__item_img-container img-responsive sun">
+									<img src="images/hits-img.png" alt="img" class="hits-block__item-img img-responsive">
+								</div>
+								<div class="hits-block__item-img-text">205/65 R15 94 H</div>
+								<div class="hits-block__item-middle">
+									<span class="hits-block__item-count">Количество:</span>
+									<select name="hits_count" class="select hits-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="hits-block__item-bottom">
+									<div class="hits-block__item-price">
+										95.55 <span class="currency">Руб.</span>
+									</div>
+									<a href="#" class="btn_red hits-block__item-buy-btn">Купить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -1048,6 +1251,10 @@
 					<div class="expert-block__description">
 						Позвоните нам и мы поможем сделать правильный выбор
 					</div>
+
+					<div class="expert-block__img-container visible-xs img-responsive">
+						<img src="images/consult-img-man.png" alt="img" class="expert-block__img">
+					</div>
 				</div>
 			</div>
 			<div class="expert-block__bottom">
@@ -1057,7 +1264,7 @@
 						<div class="expert-block__tel">+375 (29) 555 55 55</div>
 					</div>
 
-					<div class="expert-block__img-container img-responsive">
+					<div class="expert-block__img-container img-responsive hidden-xs">
 						<img src="images/consult-img-man.png" alt="img" class="expert-block__img">
 					</div>
 				</div>
@@ -1067,7 +1274,7 @@
 		<section class="seo-block">
 			<div class="container">
 				<div class="seo-block-container">
-					<h2 class="seo-block__title">Текст для продвижения в поисковиках</h2>
+					<h2 class="seo-block__title hidden-xs">Текст для продвижения в поисковиках</h2>
 					<article class="seo-block__article">
 						<h3 class="seo-block__title_h3">Шины в интернет-магазине Aset.by</h3>
 						<div class="seo-block__description">
@@ -1190,7 +1397,7 @@
 		<div class="container">
 			<div class="footer-top">
 				<div class="footer-top__col">
-					<a href="#" class="footer-top__logo">АВТОКОЛЁСА</a>
+					<a href="#" class="footer-top__logo hidden-xs">АВТОКОЛЁСА</a>
 					<div class="footer-top__title">Наши офисы:</div>
 					<ul class="footer-top__adress-list">
 						<li class="footer-top__adress-item">
@@ -1203,7 +1410,7 @@
 						</li>
 					</ul>	
 				</div>
-				<div class="footer-top__col footer-top__col_wheels">
+				<div class="footer-top__col footer-top__col_wheels hidden-xs">
 					<div class="footer-top__title">Шины</div>
 					<ul class="footer-top__items-list">
 						<li class="footer-top__items-item">
@@ -1223,7 +1430,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="footer-top__col footer-top__col_disks">
+				<div class="footer-top__col footer-top__col_disks hidden-xs">
 					<div class="footer-top__title">Диски</div>
 					<ul class="footer-top__items-list">
 						<li class="footer-top__items-item">
@@ -1240,7 +1447,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="footer-top__col">
+				<div class="footer-top__col hidden-xs">
 					<nav class="footer-top__nav">
 						<ul class="footer-top__nav-list">
 							<li class="footer-top__nav-item">
@@ -1271,7 +1478,7 @@
 				<div class="footer-bottom__copy pull-left">
 					© 2012-2017 Интернет-магазин
 				</div>
-				<div class="footer-bottom__buttons pull-right">
+				<div class="footer-bottom__buttons pull-right hidden-xs">
 					<a href="#" class="footer-bottom__btn">VISA</a>
 					<a href="#" class="footer-bottom__btn">ЕРИП</a>
 					<a href="#" class="footer-bottom__btn">PAYPAL</a>
@@ -1283,6 +1490,7 @@
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/select2.full.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
