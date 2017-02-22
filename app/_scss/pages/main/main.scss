@@ -2,7 +2,7 @@
 
 .header-top {
 	background: #264ba6;
-	padding: 12px 0;
+	padding: 7px 0;
 	color: $orange;
 }
 
@@ -24,11 +24,11 @@
 }
 
 .header-middle {
-	padding: 12px 0;
+	padding: 5px 0;
 }
 
 .header__logo-text {
-	padding: 30px 0;
+	padding: 24px 0;
 	text-transform: uppercase;
 	font-size: 26px;
 	@include font(bold);
@@ -38,11 +38,12 @@
 	@include linksHover();
 	position: relative;
 	margin-left: 145px;
+	margin-right: 10px;
 }
 
 .header-middle__basket-circle {
-	width: 65px;
-	height: 65px;
+	width: 54px;
+	height: 54px;
 	background: $blue;
 	position: relative;
 	margin: 0 auto;
@@ -54,36 +55,37 @@
 		@extend %center;
 		left: 46%;
 		@include get-sprite($main-spr, basket);
+		transform: translate(-50%, -50%) scale(0.8);
 	}
 }
 
 .header-middle__basket-text {
 	@include font(bold);
-	font-size: 14px;
+	font-size: 12px;
 	text-transform: uppercase;
 }
 
 .header-middle__basket-count {
 	position: absolute;
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background: $red;
 	color: #fff;
-	line-height: 25px;
+	line-height: 30px;
 	text-align: center;
 	font-size: 16px;
 	@include font(bold);
 	top: 0;
-	right: 0;
+	right: -10px;
 }
 
 .header-middle__info {
-	padding: 8px 0;
+	padding: 10px 0;
 }
 
 .header-middle__info-tel {
-	margin-bottom: 22px;
+	margin-bottom: 8px;
 	position: relative;
 	padding-left: 50px;
 	font-size: 18px;
@@ -108,7 +110,7 @@
 
 .header-bottom {
 	background: $blue;
-	padding: 20px 0;
+	padding: 5px 0;
 }
 
 .header-nav__list {
@@ -119,15 +121,27 @@
 }
 
 .header-nav__item {
-	@include linksHover();
-	color: $orange;
-	margin-right: 90px;
-	text-transform: uppercase;
-	font-size: 20px;
-	@include font(bold);
+	margin-right: 40px;
 
 	&:last-child {
 		margin-right: 0;
+	}
+}
+
+.header-nav__link,
+.header-nav__link:focus {
+	transition: all 0.3s;
+	color: $orange;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 10px 20px;
+	@include font(bold);
+
+	&:hover {
+		background: $orange;
+		color: $blue;
+		border-radius: 4px;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 	}
 }
 
@@ -136,7 +150,7 @@
 /* selection-block */
 
 .selection-block {
-	padding-top: 35px;
+	padding-top: 25px;
 	background: url('../../../images/selection-bg.png');
 }
 
@@ -275,6 +289,7 @@
 		}
 
 		.select2-selection__arrow {
+			transition: all 0.3s;
 			right: 0;
 			position: absolute;
 			display: block;
@@ -301,20 +316,35 @@
 	}
 }
 
-.select2-container--open {
+.select:not(.hits-select) + .select2-container--open {
 	.selection {
 		.select2-selection__arrow {
+			background: $blue;
+			border-radius: 0px 3px 3px 0;
+
 			&:before {
-				transform: translate(-50%, -50%) rotate(180deg);
+				@include get-sprite($main-spr, carret-down_white);
 			}
 		}
 	}
 }
 
+.select:not(.hits-select) + .select2:hover {
+	.select2-selection__arrow {
+		background: $blue;
+		border-radius: 0px 3px 3px 0;
+
+		&:before {
+			@include get-sprite($main-spr, carret-down_white);
+		}
+	}
+}
+
 .select2-results__option {
-	padding: 18px 15px;
+	padding: 5px 15px;
 	text-transform: uppercase;
 	@include font(bold);
+	font-size: 16px;
 }
 
 .select2-dropdown {
@@ -324,6 +354,10 @@
 
 .select2-container--default .select2-results>.select2-results__options {
 	max-height: 400px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background: $blue;
 }
 
 .hits-select + .select2-container {
@@ -357,7 +391,7 @@
 
 .hits-select-select2-dropdown {
 	.select2-results__option {
-		padding: 10px 12px;
+		padding: 5px 12px;
 		text-transform: uppercase;
 		font-family: 'opensans-bold';
 	}
@@ -366,8 +400,14 @@
 /* select 2 ...end */
 
 .tab-pane__right {
-	padding-top: 45px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.tab-model {
+	.tab-pane__right {
+		padding-bottom: 5px;
+	}
 }
 
 .tab-right__list {
@@ -412,8 +452,13 @@
 		.tab-right__drop-list-btn,
 		.tab-right__drop-list-btn:hover,
 		.tab-right__drop-list-btn:focus {
+			&:before {
+				background: $blue;
+				border-radius: 0px 3px 3px 0;
+			}
+
 			&:after {
-				transform: translateY(-50%) rotate(180deg);
+				@include get-sprite($main-spr, carret-down_white);
 			}
 		}
 	}
@@ -436,6 +481,7 @@
 	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
 
 	&:before {
+		transition: all 0.3s;
 		width: 47px;
 		@extend %pseudo;
 		height: 100%;
@@ -448,6 +494,17 @@
 		@extend %icons;
 		@include get-sprite($main-spr, carret-down_red);
 		right: 14px;
+	}
+
+	&:hover {
+		&:before {
+			background: $blue;
+			border-radius: 0px 3px 3px 0;
+		}
+
+		&:after {
+			@include get-sprite($main-spr, carret-down_white);
+		}
 	}
 }
 
@@ -507,17 +564,17 @@
 .tab-pane__left-img {
 	&.img-wheel {
 		max-width: none;
-		margin-left: -230px;
+		margin-left: -130px;
 	}
 
 	&.img-car {
-		padding-bottom: 40px;
+		padding-bottom: 30px;
 		max-width: none;
-		margin-left: -140px;
+		margin-left: -80px;
 	}
 
 	&.img-disk {
-		padding-bottom: 55px;
+		padding-bottom: 20px;
 		max-width: none;
 	}
 }
@@ -588,7 +645,7 @@
 .tab-dropdown-bottom {
 	margin-right: -25px;
 	border-top: 1px solid #b4b4b4;
-	padding: 25px 25px 25px 0;
+	padding: 20px 25px 20px 0;
 	text-align: right;
 }
 
@@ -650,7 +707,7 @@
 
 .advantages-block {
 	background: #fff;
-	padding: 105px 0 70px;
+	padding: 40px 0 30px;
 }
 
 .advantages-block__list {
@@ -661,7 +718,7 @@
 }
 
 .advantages-block__text {
-	padding-top: 95px;
+	padding-top: 85px;
 	font-size: 18px;
 	text-align: center;
 }
@@ -916,7 +973,7 @@
 	}
 }
 
-.news-block__desctiption {
+.news-block__description {
 	font-size: 16px;
 	@include font(bold);
 	color: #212832;
@@ -1034,7 +1091,7 @@
 }
 
 .seo-block-container {
-	padding: 60px 90px 55px 50px;
+	padding: 35px 90px 30px 50px;
 	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.09);
 }
 
@@ -1044,7 +1101,7 @@
 	text-transform: uppercase;
 	color: $black;
 	text-align: center;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 
 .seo-block__title_h3 {
@@ -1060,7 +1117,7 @@
 }
 
 .seo-block__article {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .seo-block__bottom {
@@ -1071,7 +1128,7 @@
 		width: 170px;
 		height: 1px;
 		background: #cccccc;
-		top: -35px;
+		top: -27px;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -1245,11 +1302,11 @@
 
 .help-modal__dialog {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	max-width: 90%;
 	width: 920px;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .help-modal__btn,
@@ -1259,7 +1316,6 @@
 	top: 25px;
 	right: 30px;
 	padding: 5px;
-	background: #fff;
 	font-size: 16px;
 	text-transform: uppercase;
 	@include font(bold);
