@@ -1,11 +1,120 @@
-/* xs+sm+md */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 9999px) {
+	.container {
+		width: 1080px;
+	}
+
 	.header-nav__item {
 		margin-right: 10px;
 	}
 
 	.selection-block__help-button, .selection-block__help-button:hover, .selection-block__help-button:focus {
-		margin-right: 0;
+		margin-right: 10px;
+	}
+
+	.select_small + .select2-container {
+		width: 130px !important;
+	}
+
+	.select_normal + .select2-container {
+		width: 220px !important;
+	}
+
+	.tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
+		width: 443px;
+	}
+
+	.tab-pane__pick-up-btn, .tab-pane__pick-up-btn:hover, .tab-pane__pick-up-btn:focus {
+		width: 220px;
+	}
+
+	.tab-pane__left-img.img-wheel {
+		margin-left: -160px;
+	}
+
+	.tab-pane__left-img.img-car {
+		margin-left: -110px;
+	}
+
+	.select_big + .select2-container {
+		width: 282px !important;
+	}
+
+	.tab-pane__left-img.img-disk {
+		margin-left: 0px;
+	}
+
+	.slogan-block .container {
+		padding-right: 475px;
+	}
+
+	.slogan-block__img-container {
+		right: 5px;
+	}
+
+	.expert-block .expert-block__top .container {
+		padding-right: 370px;
+	}
+
+	.footer-top__logo, .footer-top__logo:hover, .footer-top__logo:focus {
+		width: 225px;
+	}
+
+	.tab-paramerts_disks {
+
+		.tab-pane__right {
+			padding-right: 90px;
+		}
+
+		.tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
+			width: 353px;
+		}
+
+		.select_big + .select2-container {
+			width: 286px !important;
+		}
+
+	}
+}
+
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+	.tab-pane__left-img.img-car {
+		margin-left: -150px;
+	}
+
+	.tab-pane__left-img.img-wheel {
+		margin-left: -190px;
+	}
+
+	.tab-pane__left-img.img-disk {
+		margin-left: -30px;
+	}
+
+	.news-block__description {
+		font-size: 15px;
+	}
+
+	.hits-block__item-buy-btn, .hits-block__item-buy-btn:hover, .hits-block__item-buy-btn:focus {
+		width: 75px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+
+	.hits-block__item-price {
+		font-size: 23px;
+	}
+
+	.hits-block__item-price .currency {
+		font-size: 13px;
+	}
+
+	.tab-right__drop-list-drop-container .dropdown-menu {
+		left: -132px;
+	}
+
+	.container {
+		width: 970px;
 	}
 
 	.select_small + .select2-container {
@@ -24,64 +133,49 @@
 		width: 185px;
 	}
 
-	.tab-pane__left-img.img-wheel {
-		margin-left: -200px;
-	}
-
-	.tab-pane__left-img.img-car {
-		margin-left: -150px;
-	}
-
-	.tab-right__drop-list-drop-container .dropdown-menu {
-		left: -132px;
-	}
-
 	.select_big + .select2-container {
 		width: 282px !important;
 	}
 
-	.tab-pane__left-img.img-disk {
-		margin-left: -30px;
-	}
+	.tab-paramerts_disks {
 
-	.slogan-block .container {
-		padding-right: 475px;
-	}
+		.tab-pane__right {
+			padding-right: 90px;
+		}
 
-	.slogan-block__img-container {
-		right: 5px;
-	}
+		.tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
+			width: 320px;
+		}
 
-	.hits-block__item-buy-btn, .hits-block__item-buy-btn:hover, .hits-block__item-buy-btn:focus {
-		width: 75px;
-		height: 30px;
-		line-height: 30px;
-		font-size: 12px;
-	}
+		.select_big + .select2-container {
+			width: 252px !important;
+		}
 
-	.hits-block__item-price {
-		font-size: 23px;
-	}
-
-	.hits-block__item-price .currency {
-		font-size: 13px;
-	}
-
-	.news-block__description {
-		font-size: 15px;
-	}
-
-	.expert-block .expert-block__top .container {
-		padding-right: 370px;
-	}
-
-	.footer-top__logo, .footer-top__logo:hover, .footer-top__logo:focus {
-		width: 225px;
 	}
 }
 
 /* xs+sm */
 @media screen and (max-width: 991px) {
+	.tab-paramerts_disks {
+
+		.tab-pane__right {
+			padding-right: 0;
+		}
+
+		.tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
+			width: 260px;
+		}
+
+		.select_big + .select2-container {
+			width: 470px !important;
+		}
+
+	}
+
+	.container {
+		width: 750px;
+	}
+
 	.header-nav__item {
 		margin-right: 10px;
 	}
@@ -107,11 +201,11 @@
 	}
 
 	.select_small + .select2-container {
-		width: 200px !important;
+		width: 225px !important;
 	}
 
 	.select_normal + .select2-container {
-		width: 200px !important;
+		width: 225px !important;
 	}
 
 	.tab-right__list {
@@ -262,6 +356,10 @@
 
 /* xs */
 @media screen and (max-width: 767px) {
+	.container {
+		width: auto;
+	}
+
 	.header-nav__list,
 	.advantages-block__item,
 	.advantages-block__list,
