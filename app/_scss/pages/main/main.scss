@@ -151,7 +151,7 @@
 
 .selection-block {
 	padding-top: 25px;
-	background: url('../../../images/selection-bg.png');
+	background: image-url('selection-bg.png');
 }
 
 .selection-tabs-list {
@@ -286,6 +286,7 @@
 			line-height: inherit !important;
 			padding-left: 0 !important;
 			padding-right: 40px !important;
+			color: black;
 		}
 
 		.select2-selection__arrow {
@@ -345,6 +346,7 @@
 	text-transform: uppercase;
 	@include font(bold);
 	font-size: 16px;
+	color: black;
 }
 
 .select2-dropdown {

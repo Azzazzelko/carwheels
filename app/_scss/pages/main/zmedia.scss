@@ -4,7 +4,19 @@
 	}
 
 	.header-nav__item {
-		margin-right: 10px;
+		margin-right: 36px;
+
+		&:first-child {
+			.header-nav__link {
+				padding-left: 0;
+			}
+		}
+
+		&:last-child {
+			.header-nav__link {
+				padding-right: 0;
+			}
+		}
 	}
 
 	.selection-block__help-button, .selection-block__help-button:hover, .selection-block__help-button:focus {
@@ -78,6 +90,10 @@
 
 /* xs+sm+md */
 @media screen and (max-width: 1199px) {
+	.header-nav__item {
+		margin-right: 18px;
+	}
+
 	.tab-pane__left-img.img-car {
 		margin-left: -150px;
 	}
