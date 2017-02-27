@@ -6,6 +6,9 @@ $(function() {
 	$('.hits-select').select2({
 		dropdownCssClass: "hits-select-select2-dropdown"
 	})
+	$('.card-select').select2({
+		dropdownCssClass: "card-select-select2-dropdown"
+	})
 
 	/* Dropdown */
 	$('.tab-content .dropdown .dropdown-toggle').on('click', function (e) {
