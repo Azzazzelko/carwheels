@@ -1,0 +1,214 @@
+.basket-block {
+	background: image-url('selection-bg.png');
+	padding: 20px 0 50px 0;
+}
+
+.basket-block__title {
+	color: $black;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.basket-block__item {
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.09);
+	background: #fff;
+	padding: 15px 15px 0 30px;
+	font-size: 0;
+	margin-bottom: 25px;
+	border-radius: 4px;
+}
+
+.basket-block__item-left {
+	display: inline-block;
+	width: 44%;
+	vertical-align: top;
+}
+
+.basket-block__item-right {
+	display: inline-block;
+	width: 56%;
+	vertical-align: top;
+}
+
+.basket-block__img-container {
+	position: relative;
+	height: 95px;
+	width: 265px;
+	height: 135px;
+}
+
+.basket-block__img {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.basket-block__img-container_sun:before {
+	@extend %pseudo;
+	@include get-sprite($main-spr, big-sun);
+	left: -14px;
+	top: -14px;
+	transform: scale(0.6);
+}
+
+.basket-block__item {
+	.card-block__info {
+		margin-bottom: 20px;
+	}
+}
+
+.basket-block__item-rigth-top {
+	padding-right: 5px;
+	text-align: right;
+}
+
+.basket-block__item-rigth__delete-btn,
+.basket-block__item-rigth__delete-btn:hover,
+.basket-block__item-rigth__delete-btn:focus {
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	color: $black;
+	padding-left: 25px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+
+	&:before {
+		@extend %icons;
+		left: 0;
+		@include get-sprite($main-spr, basket-delete);
+	}
+}
+
+.basket-block__item-rigth__delete-btn {
+	@include linksHover();
+}
+
+.basket-block__item-rigth-top-item {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 15px;
+	@include font(bold);
+	color: $black;
+	margin-left: 30px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.basket-block__item-rigth-top {
+	margin-bottom: 95px;
+}
+
+.basket-block__item-rigth-bottom-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.basket-block__item-rigth-bottom-item-title {
+	font-size: 14px;
+	color: $black;
+	margin-bottom: 5px;
+}
+
+.card-block__right-center-middle_red {
+	&.black_only {
+		color: black;
+	}
+}
+
+
+.basket-block__bottom {
+	.card-block__right-center-middle-price {
+		float: none;
+		display: inline-block;
+	}
+}
+
+.basket-block__full-price-text {
+	color: black;
+	font-size: 22px;
+	@include font(bold);
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.basket-block__formalize-btn,
+.basket-block__formalize-btn:hover,
+.basket-block__formalize-btn:focus {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	width: 260px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	font-size: 18px;
+	@include font(bold);
+}
+
+.basket-block__return-btn,
+.basket-block__return-btn:hover,
+.basket-block__return-btn:focus {
+	float: left;
+	line-height: 51px;
+	position: relative;
+	color: #272b2f;
+	padding-left: 30px;
+	font-size: 22px;
+	display: inline-block;
+
+	&:before {
+		@extend %icons;
+		left: 0;
+		@include get-sprite($main-spr, basket-back);
+	}
+}
+
+.basket-block__return-btn {
+	@include linksHover();
+}
+
+.basket-block__bottom {
+	text-align: right;
+}
+
+.basket-block__full-price {
+	padding-right: 15px;
+    font-size: 0;
+    margin-bottom: 20px;
+}
+
+.basket-block__empty-basket {
+	min-height: 277px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.09);
+	border-radius: 4px;
+	padding: 65px 15px 0 15px;
+}
+
+.basket-block__empty-basket-title {
+	font-size: 34px;
+	color: $black;
+	@include font(semi);
+	margin-bottom: 35px;
+}
+
+.basket-block__empty-basket-return-btn,
+.basket-block__empty-basket-return-btn:hover,
+.basket-block__empty-basket-return-btn:active {
+	width: 320px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	@include font(bold);
+	height: 55px;
+	line-height: 56px;
+	display: inline-block;
+}
