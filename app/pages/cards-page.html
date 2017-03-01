@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Страница с карточками</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/select2.min.css">
+	<link rel="stylesheet" href="../css/owl.carousel.css">
+	<link rel="stylesheet" href="../css/main.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top__info">
+					<span class="header-top__info-title hidden-xs">Режим работы:</span>
+					<span class="header-top__info-description">пн - Сб:  8:00 -20:00</span>
+					<span class="header-top__info-description">ВС:  9:00 -16:00</span>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="container">
+				<h1 class="header__logo-text pull-left">
+					АВТОКОЛЁСА
+				</h1>
+
+				<a href="#" class="header-middle__basket pull-right">
+					<div class="header-middle__basket-circle"></div>
+					<div class="header-middle__basket-count">1</div>
+					<div class="header-middle__basket-text hidden-xs">Корзина</div>
+				</a>
+
+				<div class="header-middle__info pull-right">
+					<div class="header-middle__info-tel mts">+375 (29) 555 55 55</div>
+					<div class="header-middle__info-tel velcom">+375 (29) 555 55 55</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="header-bottom__nav hidden-xs">
+					<ul class="header-nav__list">
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Шины</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Диски</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Новости</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">доставка</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">оплата</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">гарантии</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="header-bottom__mobile-nav visible-xs">
+					<ul class="header-mobile-nav__list">
+						<li class="header-mobile-nav__item">
+							<div class="header-mobile-nav__dropdown dropdown">
+								<a href="#" class="header-mobile-nav__menu-btn" data-toggle="dropdown">
+									<div class="header-mobile-nav__manu-burger">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</div>
+									<span class="header-mobile-nav__item-text">Меню</span>
+								</a>
+								<div class="dropdown-menu mobile-nav__dropdown">
+									<a href="#" class="header-mobile-nav__close-drop" data-toggle="dropdown">
+									</a>
+
+									<div class="mobile-nav__dropdown-title">Шины</div>
+									<ul class="mobile-nav__dropdown-list">
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по параметрам</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по марке авто</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">летние шины</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">зимние шины</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">шинный калькулятор</a>
+										</li>
+									</ul>
+
+									<div class="mobile-nav__dropdown-title">Диски</div>
+									<ul class="mobile-nav__dropdown-list">
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по параметрам</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по марке авто</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">литые диски</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">штампованные диски</a>
+										</li>
+									</ul>
+
+									<ul class="mobile-nav__dropdown-menu-list">
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">новости</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">доставка</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">оплата</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">гарантии</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">контакты</a>
+										</li>
+									</ul>
+
+									<div class="dropdown-menu__bottom">
+										<div class="dropdown-menu__bottom-title">Режим работы:</div>
+										<ul class="dropdown-menu__bottom-list">
+											<li class="dropdown-menu__bottom-item">
+												пн - Сб:  8:00 -20:00
+											</li>
+											<li class="dropdown-menu__bottom-item">
+												ВС:  9:00 -16:00
+											</li>
+										</ul>
+										<div class="dropdown-menu__bottom-info">
+											<div class="dropdown-menu__bottom-info-tel">+375 (29) 555 55 55</div>
+											<div class="dropdown-menu__bottom-info-tel">+375 (29) 555 55 55</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="header-mobile-nav__item">
+							<a href="#" class="header-mobile-nav__link">Шины</a>
+						</li>
+						<li class="header-mobile-nav__item">
+							<a href="#" class="header-mobile-nav__link">Диски</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="breadcrubms-block">
+			<div class="container">
+				<ul class="breadcrubms-block__list">
+					<li class="breadcrubms-block__item">
+						<a href="#" class="breadcrubms-block__link">Главная</a>
+					</li>
+					<li class="breadcrubms-block__item">
+						<a href="#" class="breadcrubms-block__link">Шины</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="cards-page-block">
+			<div class="container">
+				<h1 class="cards-page__title">
+					Автомобильные шины
+				</h1>
+				<ul class="cards-page__list">
+					<li class="cards-page__item">
+						<div class="cards-page__left">
+							<div class="cards-page__left-top">
+								<h1 class="card-block__title">roadstone</h1>
+								<div class="card-block__description">winguard sport</div>
+								<div class="card-block__info">
+									<div class="card-block__info-details">195/45 R16</div>
+									<ul class="card-block__info-list">
+										<li class="card-block__info-item">84</li>
+										<li class="card-block__info-item">H</li>
+										<li class="card-block__info-item">XL</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cards-page__left-bottom">
+								<div class="cards-page__left-bottom-col_1">
+									<div class="basket-block__img-container img-container basket-block__img-container_sun">
+										<img src="../images/basket-img.png" alt="img" class="basket-block__img img-responsive">
+									</div>
+								</div>
+								<div class="cards-page__left-bottom-col_2">
+									<div class="cards-page__left-bottom-col_2-container">
+										<ul class="card-block__right-bottom-list">
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Сезонность:</div>
+												<div class="card-block__right-bottom-item-right">Летняя</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Евроэтикетка:</div>
+												<div class="card-block__right-bottom-item-right">
+													<ul class="card-block__right-evro-list">
+														<li class="card-block__right-evro-item benz">C</li>
+														<li class="card-block__right-evro-item water">C</li>
+														<li class="card-block__right-evro-item sound">72</li>
+													</ul>
+												</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Страна пр-ва:</div>
+												<div class="card-block__right-bottom-item-right">Южная Корея <img src="../images/flag.png" class="card-block__img-flag" alt="img"></div>
+											</li>
+										</ul>
+										<div class="cards-page__price">
+											<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+											<div class="card-block__right-center-middle-price">
+												<span class="card-block__right-center-middle_red">80.41</span>
+												<span class="card-block__right-center-middle_black">руб</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-page__right">
+							<div class="cards-page__right-top">
+								<div class="cards-page__right-top-title">Доставка</div>
+								<div class="cards-page__right-top-title">Гарантия</div>	
+							</div>
+							<div class="cards-page__right-center">
+								<div class="cards-page__right-col_1">
+									<div class="card-block__right-title">Доступно:</div>
+									<div class="card-block__right-sub">
+										<div class="card-block__right-availability-container">
+											<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-page__right-col_2">
+									<div class="basket-block__item-rigth-bottom-item-title">Кол-во</div>
+									<select name="hits_count" class="select hits-select card-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="cards-page__right-bottom">
+								<a href="#" class="cards-page__buy-btn btn_red">Купить</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="cards-page__pagination-list">
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link"></a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link">1</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link">2</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link">...</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link">34</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top__col">
+					<a href="#" class="footer-top__logo hidden-xs">АВТОКОЛЁСА</a>
+					<div class="footer-top__title">Наши офисы:</div>
+					<ul class="footer-top__adress-list">
+						<li class="footer-top__adress-item">
+							<p>г.Минск: ул.Мележа, 1А</p>
+							<p>686-86-86 МТС, Velcom, Life</p>
+						</li>
+						<li class="footer-top__adress-item">
+							<p>г.Могилев: ул.Строителей, 21</p>
+							<p>+375 (222) 23-49-49</p>
+						</li>
+					</ul>	
+				</div>
+				<div class="footer-top__col footer-top__col_wheels hidden-xs">
+					<div class="footer-top__title">Шины</div>
+					<ul class="footer-top__items-list">
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по параметрам</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по марке авто</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">летние шины</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">зимние шины</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">шинный калькулятор</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-top__col footer-top__col_disks hidden-xs">
+					<div class="footer-top__title">Диски</div>
+					<ul class="footer-top__items-list">
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по параметрам</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по марке авто</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">летние диски</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">штампованные диски</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-top__col hidden-xs">
+					<nav class="footer-top__nav">
+						<ul class="footer-top__nav-list">
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Новости</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Доставка</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Оплата</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Гарантии</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Контакты</div>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-bottom clearfix">
+				<div class="footer-bottom__copy pull-left">
+					© 2012-2017 Интернет-магазин
+				</div>
+				<div class="footer-bottom__buttons pull-right hidden-xs">
+					<a href="#" class="footer-bottom__btn">VISA</a>
+					<a href="#" class="footer-bottom__btn">ЕРИП</a>
+					<a href="#" class="footer-bottom__btn">PAYPAL</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/select2.full.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
