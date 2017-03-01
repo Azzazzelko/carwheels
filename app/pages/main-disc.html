@@ -205,7 +205,7 @@
 								<ul class="tab-right__list">
 									<li class="tab-right__item">
 										<div class="tab-right__item-title">Тип диска:</div>
-										<select name="stamp" class="select select_big">
+										<select name="stamp" class="select select_small">
 											<option value="stamp">Штампованый</option>
 											<option value="nostamp">не штампованый</option>
 										</select>
@@ -244,17 +244,17 @@
 											<option value="199">199</option>
 										</select>
 									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Dia (ступица):</div>
+										<select name="dia" class="select select_small">
+											<option value="any">Любая</option>
+											<option value="notany">Не любая</option>
+										</select>
+									</li>
 								</ul>
 								<ul class="tab-right__list">
 									<li class="tab-right__item">
-										<div class="tab-right__item-title">Ширина от:</div>
-										<select name="width_of" class="select select_small">
-											<option value="65">65</option>
-											<option value="56">56</option>
-										</select>
-									</li>
-									<li class="tab-right__item">
-										<div class="tab-right__item-title">Ширина до:</div>
+										<div class="tab-right__item-title">Ширина:</div>
 										<select name="width_to" class="select select_small">
 											<option value="65">65</option>
 											<option value="196">196</option>
@@ -264,7 +264,7 @@
 										</select>
 									</li>
 									<li class="tab-right__item">
-										<div class="tab-right__item-title">Вылет от:</div>
+										<div class="tab-right__item-title">Вылет:</div>
 										<select name="disk_of" class="select select_small">
 											<option value="r15">R15</option>
 											<option value="196">196</option>
@@ -274,222 +274,214 @@
 										</select>
 									</li>
 									<li class="tab-right__item">
-										<div class="tab-right__item-title">Вылет до:</div>
-										<select name="disk_to" class="select select_small">
-											<option value="r15">R15</option>
-											<option value="196">196</option>
-											<option value="197">197</option>
-											<option value="198">198</option>
-											<option value="199">199</option>
-										</select>
+										<div class="dropdown tab-right__drop-list-drop-container">
+											<div class="tab-right__item-title">Производитель:</div>
+											<a href="#" class="dropdown-toggle tab-right__drop-list-btn">выберите из списка</a>
+											<div class="dropdown-menu">
+												<form action="#" class="tab-selection-form">
+													<a href="#" class="tab-dropdown-close-btn">закрыть</a>
+													<div class="tab-dropdown-top">
+														<label class="producer-check-label">
+															<input type="checkbox" name="allproducer" class="producer-check-input-checkbox">
+															<div class="producer-check-label-text producer-check-label-text_bold">Все производители</div>
+														</label>
+													</div>
+													<div class="row">
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="tab-dropdown-bottom">
+														<a href="#" class="tab-dropdown-clear-btn">очистить</a>
+														<a href="#" class="tab-dropdown-choose-btn btn_red">выбрать</a>
+													</div>
+												</form>
+											</div>
+										</div>
 									</li>
 								</ul>
 								<div class="tab-right__drop-list">
-									<div class="dropdown tab-right__drop-list-drop-container">
-										<div class="tab-right__item-title">Производитель:</div>
-										<a href="#" class="dropdown-toggle tab-right__drop-list-btn">выберите из списка</a>
-										<div class="dropdown-menu">
-											<form action="#" class="tab-selection-form">
-												<a href="#" class="tab-dropdown-close-btn">закрыть</a>
-												<div class="tab-dropdown-top">
-													<label class="producer-check-label">
-														<input type="checkbox" name="allproducer" class="producer-check-input-checkbox">
-														<div class="producer-check-label-text producer-check-label-text_bold">Все производители</div>
-													</label>
-												</div>
-												<div class="row">
-													<div class="col-sm-3">
-														<ul class="drop-pruducer-list">
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BARUM</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BFGOODRICH</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BRIDGESTONE</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CONTINENTAL</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">COOPER</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CORDIANT</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">DUNLOP</div>
-																</label>
-															</li>
-														</ul>
-													</div>
-													<div class="col-sm-3">
-														<ul class="drop-pruducer-list">
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BARUM</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BFGOODRICH</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BRIDGESTONE</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CONTINENTAL</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">COOPER</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CORDIANT</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">DUNLOP</div>
-																</label>
-															</li>
-														</ul>
-													</div>
-													<div class="col-sm-3">
-														<ul class="drop-pruducer-list">
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BARUM</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BFGOODRICH</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BRIDGESTONE</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CONTINENTAL</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">COOPER</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CORDIANT</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">DUNLOP</div>
-																</label>
-															</li>
-														</ul>
-													</div>
-													<div class="col-sm-3">
-														<ul class="drop-pruducer-list">
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BARUM</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BFGOODRICH</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">BRIDGESTONE</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CONTINENTAL</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">COOPER</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">CORDIANT</div>
-																</label>
-															</li>
-															<li class="drop-producer-item">
-																<label class="producer-check-label">
-																	<input type="checkbox" name="producer" class="producer-check-input-checkbox">
-																	<div class="producer-check-label-text">DUNLOP</div>
-																</label>
-															</li>
-														</ul>
-													</div>
-												</div>
-												<div class="tab-dropdown-bottom">
-													<a href="#" class="tab-dropdown-clear-btn">очистить</a>
-													<a href="#" class="tab-dropdown-choose-btn btn_red">выбрать</a>
-												</div>
-											</form>
-										</div>
-									</div>
 									<a href="#" class="tab-pane__pick-up-btn btn_red">Подобрать</a>
 								</div>
 							</div>

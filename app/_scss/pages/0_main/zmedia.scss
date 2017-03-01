@@ -72,19 +72,45 @@
 	}
 
 	.tab-paramerts_disks {
-
-		.tab-pane__right {
-			padding-right: 90px;
-		}
-
 		.tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
-			width: 353px;
+			width: 337px;
 		}
 
 		.select_big + .select2-container {
 			width: 286px !important;
 		}
 
+		.select_small + .select2-container {
+			width: 160px !important;
+		}
+
+		.tab-right__drop-list {
+			justify-content: flex-end;
+		}
+	}
+
+	.tab-paramerts_disks {
+		.tab-right__list {
+			background: #ddd;
+			margin-top: -15px;
+			padding-top: 15px;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.tab-right__drop-list {
+			margin-top: 15px;
+		}
+
+		.select_small + .select2-container {
+			width: 155px !important;
+		}
+
+		.tab-right__drop-list-btn, 
+		.tab-right__drop-list-btn:hover, 
+		.tab-right__drop-list-btn:focus {
+			width: 323px;
+		}
 	}
 }
 
