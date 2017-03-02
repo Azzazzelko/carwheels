@@ -206,12 +206,12 @@
 								<li class="card-block__info-item">H</li>
 								<li class="card-block__info-item">XL</li>
 							</ul>
-							<a href="#" class="card-block__info-sizes-btn">Все размеры</a>
+							<a href="#" class="card-block__info-sizes-btn hidden-xs">Все размеры</a>
 						</div>
 						<div class="card-block__img-container img-container card-block__img-container_sun">
 							<img src="../images/card-big-wheel.png" alt="img" class="card-block__img img-responsive">
 						</div>
-						<div class="card-block__img-prod-container img-container">
+						<div class="card-block__img-prod-container img-container hidden-xs">
 							<img src="../images/producer-1.png" alt="img" class="card-block__img-prod img-responsive">
 						</div>
 					</div>
@@ -234,13 +234,13 @@
 										<div class="card-block__right-title">Доступно:</div>
 										<div class="card-block__right-sub">
 											<div class="card-block__right-availability-container">
-												<div class="card-block__right-availability-inner"></div>
+												<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
 											</div>
 										</div>
 									</li>
 									<li class="card-block__right-center-item">
 										<div class="card-block__right-title">Кол-во:</div>
-										<select name="hits_count" class="select hits-select">
+										<select name="hits_count" class="select hits-select card-select">
 											<option value="1">1</option>
 											<option value="2">2</option>
 											<option value="3">3</option>
@@ -249,13 +249,13 @@
 									</li>
 								</ul>
 							</div>
-							<div class="card-block__right-center-middle">
+							<div class="card-block__right-center-middle clearfix">
 								<div class="card-block__right-center-middle-title">За 1 штуку:</div>
 								<div class="card-block__right-center-middle-price">
 									<span class="card-block__right-center-middle_red">80.41</span>
 									<span class="card-block__right-center-middle_black">руб</span>
 								</div>
-								<a href="#" class="card-block__right-center-middle-btn">Купить</a>
+								<a href="#" class="card-block__right-center-middle-btn btn_red">Купить</a>
 							</div>
 							<div class="card-block__right-center-bottom">
 								<div class="card-block__right-center-bottom-services-title">Услуги:</div>
@@ -289,11 +289,17 @@
 									<div class="card-block__right-bottom-item-right">195/45 R16</div>
 								</li>
 								<li class="card-block__right-bottom-item">
-									<div class="card-block__right-bottom-item-left">Индекс скорости:</div>
+									<div class="card-block__right-bottom-item-left">
+										<span class="hidden-xs">Индекс скорости:</span>
+										<span class="visible-xs">Инд. скорости:</span>
+									</div>
 									<div class="card-block__right-bottom-item-right">V = max 240 km/h</div>
 								</li>
 								<li class="card-block__right-bottom-item">
-									<div class="card-block__right-bottom-item-left">Индекс нагрузки:</div>
+									<div class="card-block__right-bottom-item-left">
+										<span class="hidden-xs">Индекс нагрузки:</span>
+										<span class="visible-xs">Инд. нагрузки:</span>
+									</div>
 									<div class="card-block__right-bottom-item-right">91 = max 615 kg</div>
 								</li>
 								<li class="card-block__right-bottom-item">
@@ -307,7 +313,297 @@
 			</div>
 		</section>
 
-		<section class="advantages-block">
+		<section class="card-description-block">
+			<div class="container">
+				<div class="card-description-block__container">
+					<ul class="card-description-block__list" role="tablist">
+						<li role="presentation" class="active card-description-block__item">
+							<a href="#description" aria-controls="home" role="tab" data-toggle="tab" class="card-description-block__link">ОПИСАНИЕ</a>
+						</li>
+						<li role="presentation" class="card-description-block__item">
+							<a href="#sizes" aria-controls="home" role="tab" data-toggle="tab" class="card-description-block__link">ТИПОРАЗМЕРЫ</a>
+						</li>
+						<li role="presentation" class="card-description-block__item">
+							<a href="#evro" aria-controls="home" role="tab" data-toggle="tab" class="card-description-block__link">ЕВРОЭТИКЕТКА</a>
+						</li>
+						<li role="presentation" class="card-description-block__item">
+							<a href="#delivery" aria-controls="home" role="tab" data-toggle="tab" class="card-description-block__link">ДОСТАВКА</a>
+						</li>
+						<li role="presentation" class="card-description-block__item">
+							<a href="#pay" aria-controls="home" role="tab" data-toggle="tab" class="card-description-block__link">ОПЛАТА</a>
+						</li>
+						<li role="presentation" class="card-description-block__item">
+							<a href="#garant" aria-controls="home" role="tab" data-toggle="tab" class="card-description-block__link">ГАРАНТИЯ</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane tab-pane__card-description active" id="description">
+							<h2 class="card-description-block__title">Шины PREMIORRI SOLAZO</h2>
+
+							<article class="card-description-block__article">
+								<h3 class="card-description-block__h3-title">
+									Устойчивость на дороге
+								</h3>
+								<div class="card-description-block__description">
+									<p>
+										Великолепная курсовая устойчивость. Усиленное центральное и монолитные крайние ребра обеспечивают высокую точность управления и маневренность автомобиля на высоких скоростях.
+									</p>
+									<p>
+										Максимальное сцепление на сухой дороге. Оптимизированное пятно контакта с равномерным распределением давления по всей ширине беговой дорожки и уникальный состав резиновой смеси обеспечивают высокие показатели сцепления.
+									</p>
+									<p>
+										Мощные, крупные, максимально жесткие боковые блоки увеличивают сцепление при любых режимах движения, включая повороты на высоких скоростях на сухой дороге.
+									</p>
+									<p>
+										Максимальное сцепление на мокрой дороге. Широкие центральные, окружные, поперечные и тупиковые канавки, эффективно отводя воду из пятна контакта, повышают сцепление с мокрой дорогой.
+									</p>
+								</div>
+							</article>
+
+							<article class="card-description-block__article">
+								<h3 class="card-description-block__h3-title">
+									Защита от аквапланирования
+								</h3>
+								<div class="card-description-block__description">
+									<p>			
+										Широкие окружные и тупиковые канавки эффективно отводят воду из пятна контакта.
+									</p>
+									<p>
+										Шашки с ножевыми прорезями разрезают водяную пленку, увеличивая сцепление с мокрой дорогой.
+									</p>
+								</div>
+							</article>
+
+							<article class="card-description-block__article">
+								<h3 class="card-description-block__h3-title">							
+									Прочная боковина
+								</h3>
+								<div class="card-description-block__description">
+									<p>
+										Защита боковины на молекулярном уровне. Уникальный состав резиновой смеси (высокоструктурный техуглерод в комбинации с защитной группой от озонового и атмосферного старения Santaflex 6 PPD) обеспечивает защиту от боковых ударов и порезов, сохраняя при этом эластичность боковины.
+									</p>
+									<p>
+										Что помогает шине служить дольше
+									</p>
+									<p>
+										Улучшенный теплоотвод. Боковые и широкие центральные канавки обеспечивают эффективный отвод тепла, увеличивая ресурс шины.
+									</p>
+								</div>
+							</article>
+						</div>
+
+						<div role="tabpanel" class="tab-pane tab-pane__card-sizes" id="sizes">
+							<table class="card-sizes__table">
+								<thead class="card-sizes__thead">
+									<tr class="card-sizes__tr">
+										<th></th>
+										<th>Типоразмер</th>
+										<th>Индексы</th>
+										<th>Страна пр-ва</th>
+										<th>Наличие</th>
+										<th>Цена</th>
+										<th>Количество</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody class="card-sizes__tbody">
+									<tr class="card-sizes__tr">
+										<td>
+											<div class="card-sizes__td-first">R15</div>
+										</td>
+										<td>165/65 R15</td>
+										<td>81 H</td>
+										<td>Сербия</td>
+										<td>
+											<div class="hidden-xs card-block__right-availability-container">
+												<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+											</div>
+										</td>
+										<td>
+											<div class="card-sizes__price">
+												<span class="card-sizes__red">80.41</span>
+												<span class="card-sizes__black">руб</span>
+											</div>
+										</td>
+										<td>
+											<select name="hits_count" class="select hits-select card-select">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</td>
+										<td>
+											<a href="#" class="card-sizes__btn btn_red">Купить</a>
+										</td>
+									</tr>
+									<tr class="card-sizes__tr">
+										<td>
+											<div class="card-sizes__td-first">R15</div>
+										</td>
+										<td>165/65 R15</td>
+										<td>81 H</td>
+										<td>Сербия</td>
+										<td>
+											<div class="hidden-xs card-block__right-availability-container">
+												<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+											</div>
+										</td>
+										<td>
+											<div class="card-sizes__price">
+												<span class="card-sizes__red">80.41</span>
+												<span class="card-sizes__black">руб</span>
+											</div>
+										</td>
+										<td>
+											<select name="hits_count" class="select hits-select card-select">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</td>
+										<td>
+											<a href="#" class="card-sizes__btn btn_red">Купить</a>
+										</td>
+									</tr>
+									<tr class="card-sizes__tr">
+										<td>
+											<div class="card-sizes__td-first">R15</div>
+										</td>
+										<td>165/65 R15</td>
+										<td>81 H</td>
+										<td>Сербия</td>
+										<td>
+											<div class="hidden-xs card-block__right-availability-container">
+												<div class="card-block__right-availability-inner card-block__right-availability-inner_red" style="width: 30%"></div>
+											</div>
+										</td>
+										<td>
+											<div class="card-sizes__price">
+												<span class="card-sizes__red">80.41</span>
+												<span class="card-sizes__black">руб</span>
+											</div>
+										</td>
+										<td>
+											<select name="hits_count" class="select hits-select card-select">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</td>
+										<td>
+											<a href="#" class="card-sizes__btn btn_red">Купить</a>
+										</td>
+									</tr>
+									<tr class="card-sizes__tr">
+										<td>
+											<div class="card-sizes__td-first">R15</div>
+										</td>
+										<td>165/65 R15</td>
+										<td>81 H</td>
+										<td>Сербия</td>
+										<td>
+											<div class="hidden-xs card-block__right-availability-container">
+												<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+											</div>
+										</td>
+										<td>
+											<div class="card-sizes__price">
+												<span class="card-sizes__red">80.41</span>
+												<span class="card-sizes__black">руб</span>
+											</div>
+										</td>
+										<td>
+											<select name="hits_count" class="select hits-select card-select">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</td>
+										<td>
+											<a href="#" class="card-sizes__btn btn_red">Купить</a>
+										</td>
+									</tr>
+									<tr class="card-sizes__tr">
+										<td>
+											<div class="card-sizes__td-first">R15</div>
+										</td>
+										<td>165/65 R15</td>
+										<td>81 H</td>
+										<td><div class="test">Сербия</div></td>
+										<td>
+											<div class="hidden-xs card-block__right-availability-container">
+												<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+											</div>
+										</td>
+										<td>
+											<div class="card-sizes__price">
+												<span class="card-sizes__red">80.41</span>
+												<span class="card-sizes__black">руб</span>
+											</div>
+										</td>
+										<td>
+											<select name="hits_count" class="select hits-select card-select">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</td>
+										<td>
+											<a href="#" class="card-sizes__btn btn_red">Купить</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div role="tabpanel" class="tab-pane tab-pane__card-evro" id="evro">
+							<h2 class="card-description-block__title">Шины TAURUS HIGH PERFORMANCE 401 в типоразмере 205/65 RR15 94 V,</h2>
+
+							<div class="card-description-block__description">
+								<p>
+									согласно информации от производителя, обладают следующими параметрами:
+								</p>
+
+								<ul class="tab-pane__card-evro-list">
+									<li class="tab-pane__card-evro-item benz">
+										<div class="tab-pane__card-evro-item-text">B</div>
+									</li>
+									<li class="tab-pane__card-evro-item water">
+										<div class="tab-pane__card-evro-item-text">A</div>
+									</li>
+									<li class="tab-pane__card-evro-item sound">
+										<div class="tab-pane__card-evro-item-text">68<span class="small">dB</span></div>
+									</li>
+								</ul>
+
+								<p>
+									Шины класса A является наиболее экономичными (с самым низким сопротивлением качению), а шины класса G являются наименее экономичными (с самым высоким сопротивлением качению). Величина сопротивления качению влияет на потребление топлива автомобилем и количество выбросов CO2 в атмосферу.Шины класса A имеют наиболее короткий тормозной путь, а шины класса G имеют наиболее длинный тормозной путь. Сцепление на мокром дорожном покрытии является одним из важнейших факторов безопасного вождения.Шум, создаваемый шинами проезжающего автомобиля, обозначается символом в виде одной (самые тихие), двух или трех (самые громкие) звуковых волн. Кроме того, на евроэтикетках указывается конкретное значение производимого шинами шума в децибелах.
+								</p>
+							</div>
+						</div>
+
+						<div role="tabpanel" class="tab-pane tab-pane__card-delivery" id="delivery">
+							delivery
+						</div>
+
+						<div role="tabpanel" class="tab-pane tab-pane__card-pay" id="pay">
+							pay
+						</div>
+
+						<div role="tabpanel" class="tab-pane tab-pane__card-garant" id="garant">
+							garant
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages-block hidden-xs">
 			<div class="container">
 				<ul class="advantages-block__list">
 					<li class="advantages-block__item advantages-block__item_number-1">
@@ -344,7 +640,7 @@
 			</div>
 		</section>
 
-		<section class="expert-block">
+		<section class="expert-block expert-block_shadow">
 			<div class="expert-block__top">	
 				<div class="container">
 					<div class="expert-block__exp">более 20 лет опыта</div>

@@ -49,4 +49,9 @@ $(function() {
 		singleItem : true
 	});
 
+	/* circle text */
+	if ( $('.wheel-circle-text').length ){
+		$('.wheel-circle-text').circleType({radius: 200});
+	}
+	
 }());

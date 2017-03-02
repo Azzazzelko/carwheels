@@ -1,8 +1,6 @@
 .cards-page-block {
 	background: image-url('cards-page-bg.png') no-repeat;
 	background-size: cover;
-	padding-top: 75px;
-	margin-top: -75px;
 }
 
 .cards-page__title {
@@ -20,6 +18,127 @@
 	border-radius: 4px;
 	padding: 15px 40px 0 35px;
 	font-size: 0;
+	position: relative;
+	margin-bottom: 15px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.hit:before {
+		position: absolute;
+		display: block;
+		content: "Хит продаж";
+		width: 150px;
+		height: 43px;
+		background: $red;
+		font-size: 14px;
+		@include font(bold);
+		line-height: 44px;
+		padding: 0 0 0 15px;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.21);
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px; 
+		top: -2px;
+		left: 350px;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+	}
+
+	&.hit:after {
+		position: absolute;
+		display: block;
+		content: " ";
+		@include get-sprite($main-spr, card-fire);
+		top: 10px;
+		left: 470px;
+	}
+
+	&.new:after {
+		position: absolute;
+		display: block;
+		content: "Новинка";
+		width: 115px;
+		height: 43px;
+		background: #33cc33;
+		font-size: 14px;
+		@include font(bold);
+		line-height: 44px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.21);
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px; 
+		top: -2px;
+		left: 350px;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+	}
+
+	&.sale:before {
+		position: absolute;
+		display: block;
+		content: "Распродажа ";
+		width: 150px;
+		height: 43px;
+		background: $red;
+		font-size: 14px;
+		@include font(bold);
+		line-height: 44px;
+		padding: 0 0 0 15px;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.21);
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px; 
+		top: -2px;
+		left: 350px;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+	}
+
+	&.sale:after {
+		position: absolute;
+		display: block;
+		content: "%";
+		@include font(bold);
+		text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.21);
+		text-transform: uppercase;
+		color: #fff;
+		top: 6px;
+		font-size: 18px;
+		left: 470px;
+	}
+
+	&.special:before {
+		position: absolute;
+		display: block;
+		content: "Спецпредложение ";
+		width: 205px;
+		height: 43px;
+		background: $blue;
+		font-size: 14px;
+		@include font(bold);
+		line-height: 44px;
+		padding: 0 0 0 15px;
+		text-transform: uppercase;
+		color: $orange;
+		text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.21);
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px; 
+		top: -2px;
+		left: 350px;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+	}
+
+	&.special:after {
+		@include get-sprite($main-spr, star);
+		position: absolute;
+		display: block;
+		content: "";
+		top: 10px;
+		left: 522px;
+	}
 
 	.card-block__info {
 		margin-bottom: 20px;
@@ -29,12 +148,40 @@
 		margin-top: -10px
 	}
 
+	.card-block__info-item {
+		line-height: 1;
+		padding: 2px 10px;
+		border-radius: 0;
+	}
+
 	.cards-page__price {
 		padding-top: 28px;
 	}
 
 	.card-block__right-bottom-item-right {
 		margin-left: 30px;
+	}
+
+	.basket-block__img-container {
+		overflow: hidden;
+	}
+
+	.basket-block__img {
+		height: auto;
+	}
+}
+
+.cards-page__list_discs {
+	.basket-block__img-container {
+		height: 188px;
+	}
+
+	.cards-page__right-top {
+		margin-bottom: 125px;
+	}
+
+	.cards-page__price {
+		padding-top: 80px;
 	}
 }
 
@@ -104,3 +251,108 @@
 	text-transform: uppercase;
 	border-radius: 4px;
 }
+
+.cards-page__list {
+	margin-bottom: 20px;
+}
+
+.cards-page__pagination-list {
+	font-size: 0;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.cards-page__pagination-link {
+	width: 100%;
+	height: 100%;
+}
+
+.cards-page__pagination-item {
+	@include linksHover();
+	vertical-align: middle;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	margin-right: 14px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: #fff;
+	border: 2px solid $blue;
+	color: $blue;
+	font-size: 16px;
+	@include font(bold);
+	text-align: center;
+	display: inline-block;
+	line-height: 31px;
+	position: relative;
+
+	&:last-child {
+		margin-right: 0;
+
+		&:before {
+			@extend %center;
+			@include get-sprite($main-spr, arrow-right_blue);	
+		}
+	}
+
+	&:first-child {
+		&:before {
+			@extend %center;
+			@include get-sprite($main-spr, arrow-left_blue);	
+		}
+	}
+
+	&.active {
+		background: $blue;
+		color: #fff;
+	}
+}
+
+.seo-block__aticle-col_left {
+	display: inline-block;
+	vertical-align: top;
+	width: 340px;
+	margin-right: 180px;
+}
+
+.seo-block__aticle-col_right {
+	display: inline-block;
+	width: 340px;
+	vertical-align: top;
+}
+
+.seo-block__title_h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	@include font(bold);
+	color: $black;
+}
+
+.seo-block__index-list,
+.seo-block__brands-list {
+	font-size: 0;
+}
+
+.seo-block__index-item,
+.seo-block__brands-item {
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 16px;
+	line-height: 26px;
+	color: $black;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.wheel-circle-text {
+	bottom: 80px;
+	left: 160px;
+	transform: rotate(-37deg);
+	position: absolute !important;
+	font-size: 28px;
+	color: #fff;
+	@include font(bold);
+}
+

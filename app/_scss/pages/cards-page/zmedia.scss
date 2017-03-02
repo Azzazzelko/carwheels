@@ -1,0 +1,295 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+	.cards-page__item {
+		.card-block__right-bottom-item-right {
+			margin-left: 10px;
+		}
+
+		.card-block__right-center-middle_red {
+			margin-right: 0;
+			font-size: 38px;
+		}
+
+		.card-block__right-center-middle_black {
+			padding-top: 5px;
+			font-size: 14px;
+		}
+	}
+
+	.wheel-circle-text {
+		bottom: 82px;
+		left: 137px;
+	}
+
+	.seo-block__aticle-col_left {
+		margin-right: 110px;
+	}
+
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+	.wheel-circle-text {
+		bottom: 95px;
+		left: 66px;
+		transform: rotate(-30deg);
+	}
+
+	.cards-page__item {
+		padding-right: 15px;
+		padding-left: 15px;
+
+		.basket-block__img-container {
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}
+
+		.card-block__right-bottom-item-right {
+			margin-left: 30px;
+		}
+
+		.cards-page__right-top-title {
+			width: 50%;
+		}
+
+		.card-block__right-bottom-list {
+			margin-bottom: 5px;
+		}
+
+		.cards-page__right-top {
+			margin-bottom: 15px;
+		}
+
+		.cards-page__right-col_1,
+		.cards-page__right-col_2 {
+			width: 50%;
+		}
+
+		.cards-page__left-bottom-col_2 {
+			width: 100%;
+		}
+
+		.cards-page__price,
+		.cards-page__buy-btn {
+			width: 50%;
+		}
+
+		.cards-page__right-bottom {
+			display: flex;
+			align-items: center;
+		}
+
+		.cards-page__price {
+			padding-top: 0;
+		}
+
+		.cards-page__buy-btn {
+			float: none;
+		}
+	}
+
+	.cards-page__left,
+	.cards-page__right,
+	.cards-page__left-bottom-col_1 {
+		width: 100%;
+	}
+
+	.cards-page__left {
+		padding-right: 0;
+	}
+
+	.cards-page__item {
+		overflow: hidden;
+
+		&.special {
+			&:after {
+				display: none;
+			}
+
+			&:before {
+				content: "Спец-предложение";
+				border-radius: 0;
+				text-align: center;
+				padding: 0;
+				transform: rotate(35deg);
+				width: 180px;
+				padding: 6px 31px;
+				line-height: 1.2;
+				font-size: 12px;
+				top: 10px;
+				right: -51px;
+				left: auto;
+				height: 38px;
+			}
+		}
+
+		&.hit {
+			&:after {
+				display: none;
+			}
+
+			&:before {
+				border-radius: 0;
+				text-align: center;
+				padding: 0;
+				transform: rotate(35deg);
+				width: 180px;
+				padding: 9px 31px;
+				line-height: 1.2;
+				font-size: 12px;
+				top: 17px;
+				right: -52px;
+				left: auto;
+				height: 30px;
+			}
+		}
+
+		&.new {
+			&:after {
+				border-radius: 0;
+				text-align: center;
+				padding: 0;
+				transform: rotate(35deg);
+				width: 180px;
+				padding: 9px 31px;
+				line-height: 1.2;
+				font-size: 12px;
+				top: 17px;
+				right: -52px;
+				left: auto;
+				height: 30px;
+			}
+		}
+
+		&.sale {
+			&:after {
+				display: none;
+			}
+
+			&:before {
+				border-radius: 0;
+				text-align: center;
+				padding: 0;
+				transform: rotate(35deg);
+				width: 180px;
+				padding: 9px 31px;
+				line-height: 1.2;
+				font-size: 12px;
+				top: 17px;
+				right: -52px;
+				left: auto;
+				height: 30px;
+			}
+		}
+	}
+
+}
+
+/* xs */
+@media screen and (max-width: 767px) {
+	.cards-page__item {
+		margin-left: -15px;
+		margin-right: -15px;
+
+		.cards-page__right-center {
+			margin-bottom: 20px;
+		}
+
+		.cards-page__price {
+			.basket-block__item-rigth-bottom-item-title {
+				margin-bottom: 0;
+			}
+		}
+
+		.card-block__right-center-middle-price {
+			width: 100%;
+			padding-right: 0;
+		}
+
+		.card-block__right-center-middle_red {
+			font-size: 34px;
+		}
+
+		.cards-page__right-top {
+			margin-bottom: 25px;
+		}
+
+		.card-block__right-title {
+			margin-bottom: 10px;
+		}
+
+		.card-block__info {
+			padding-top: 5px;
+			margin-left: -10px;
+		}
+
+		.card-block__info-item {
+			margin-bottom: 5px;
+			margin-left: 10px;
+			margin-right: 0;
+			padding: 2px 8px;
+		}
+
+		.card-block__info-details {
+			margin-right: 0;
+			padding-left: 10px;
+			margin-top: -15px;
+		}
+
+		.card-block__info-list {
+			display: inline;
+		}
+
+		.card-block__right-bottom-item-right {
+			margin-left: 10px;
+		}
+
+	}
+
+	.seo-block__aticle-col_left {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.seo-block__aticle-col_right {
+		width: 100%;
+	}
+
+	.seo-block__title_h3 {
+		line-height: 30px;
+	}
+
+	.cards-page__pagination-item {
+		width: 34px;
+		height: 34px;
+		margin-right: 13px;
+	}
+
+	.cards-page__list_discs {
+		.basket-block__img-container {
+			height: 135px;
+		}
+
+		.card-block__info-details {
+			display: inline-block;
+			line-height: 1.2;
+			margin-top: 0;
+			max-width: 191px;
+		}
+
+		.card-block__info {
+			padding-top: 0;
+		}
+
+		.card-block__info-list {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.card-block__info-item {
+			margin-bottom: 0;
+		}
+	}
+
+}

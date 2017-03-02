@@ -54,6 +54,14 @@
 	transform: scale(0.6);
 }
 
+.basket-block__img-container_cold:before {
+	@extend %pseudo;
+	@include get-sprite($main-spr, cold);
+	left: 4px;
+	top: 4px;
+	transform: scale(1.4);
+}
+
 .basket-block__item {
 	.card-block__info {
 		margin-bottom: 20px;
@@ -180,8 +188,8 @@
 
 .basket-block__full-price {
 	padding-right: 15px;
-    font-size: 0;
-    margin-bottom: 20px;
+	font-size: 0;
+	margin-bottom: 20px;
 }
 
 .basket-block__empty-basket {

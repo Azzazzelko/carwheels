@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Страница с карточками</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/select2.min.css">
+	<link rel="stylesheet" href="../css/owl.carousel.css">
+	<link rel="stylesheet" href="../css/main.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top__info">
+					<span class="header-top__info-title hidden-xs">Режим работы:</span>
+					<span class="header-top__info-description">пн - Сб:  8:00 -20:00</span>
+					<span class="header-top__info-description">ВС:  9:00 -16:00</span>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="container">
+				<h1 class="header__logo-text pull-left">
+					АВТОКОЛЁСА
+				</h1>
+
+				<a href="#" class="header-middle__basket pull-right">
+					<div class="header-middle__basket-circle"></div>
+					<div class="header-middle__basket-count">1</div>
+					<div class="header-middle__basket-text hidden-xs">Корзина</div>
+				</a>
+
+				<div class="header-middle__info pull-right">
+					<div class="header-middle__info-tel mts">+375 (29) 555 55 55</div>
+					<div class="header-middle__info-tel velcom">+375 (29) 555 55 55</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<nav class="header-bottom__nav hidden-xs">
+					<ul class="header-nav__list">
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Шины</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Диски</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Новости</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">доставка</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">оплата</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">гарантии</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="header-bottom__mobile-nav visible-xs">
+					<ul class="header-mobile-nav__list">
+						<li class="header-mobile-nav__item">
+							<div class="header-mobile-nav__dropdown dropdown">
+								<a href="#" class="header-mobile-nav__menu-btn" data-toggle="dropdown">
+									<div class="header-mobile-nav__manu-burger">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</div>
+									<span class="header-mobile-nav__item-text">Меню</span>
+								</a>
+								<div class="dropdown-menu mobile-nav__dropdown">
+									<a href="#" class="header-mobile-nav__close-drop" data-toggle="dropdown">
+									</a>
+
+									<div class="mobile-nav__dropdown-title">Шины</div>
+									<ul class="mobile-nav__dropdown-list">
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по параметрам</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по марке авто</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">летние шины</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">зимние шины</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">шинный калькулятор</a>
+										</li>
+									</ul>
+
+									<div class="mobile-nav__dropdown-title">Диски</div>
+									<ul class="mobile-nav__dropdown-list">
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по параметрам</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">по марке авто</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">литые диски</a>
+										</li>
+										<li class="mobile-nav__dropdown-item">
+											<a href="#" class="mobile-nav__dropdown-link">штампованные диски</a>
+										</li>
+									</ul>
+
+									<ul class="mobile-nav__dropdown-menu-list">
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">новости</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">доставка</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">оплата</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">гарантии</a>
+										</li>
+										<li class="mobile-nav__dropdown-menu-item">
+											<a href="#" class="mobile-nav__dropdown-menu-link">контакты</a>
+										</li>
+									</ul>
+
+									<div class="dropdown-menu__bottom">
+										<div class="dropdown-menu__bottom-title">Режим работы:</div>
+										<ul class="dropdown-menu__bottom-list">
+											<li class="dropdown-menu__bottom-item">
+												пн - Сб:  8:00 -20:00
+											</li>
+											<li class="dropdown-menu__bottom-item">
+												ВС:  9:00 -16:00
+											</li>
+										</ul>
+										<div class="dropdown-menu__bottom-info">
+											<div class="dropdown-menu__bottom-info-tel">+375 (29) 555 55 55</div>
+											<div class="dropdown-menu__bottom-info-tel">+375 (29) 555 55 55</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="header-mobile-nav__item">
+							<a href="#" class="header-mobile-nav__link">Шины</a>
+						</li>
+						<li class="header-mobile-nav__item">
+							<a href="#" class="header-mobile-nav__link">Диски</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="selection-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-4">
+						<ul class="selection-tabs-list" role="tablist">
+							<li role="presentation" class="active selection-tabs-item">
+								<a href="#parametrs" aria-controls="home" role="tab" data-toggle="tab">Подбор по параметрам</a>
+							</li>
+							<li role="presentation" class="selection-tabs-item">
+								<a href="#model" aria-controls="home" role="tab" data-toggle="tab">Подбор по марке авто</a>
+							</li>
+						</ul>
+						<a href=".help-modal" class="selection-block__help-button pull-right" data-toggle="modal">Помощь</a>
+					</div>
+				</div>
+
+				<!-- disks -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active row tab-parametrs tab-paramerts_disks" id="parametrs">
+						<div class="col-sm-4 tab-pane__left-container hidden-xs">
+							<div class="tab-pane__left">
+								<div class="tab-pane__left-img-container img-container">
+									<img src="../images/param-disc-img.png" alt="img" class="img-responsive tab-pane__left-img img-disk">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-8 col-sm-offset-4">
+							<div class="tab-pane__right">
+								<ul class="tab-right__list">
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Тип диска:</div>
+										<select name="stamp" class="select select_small">
+											<option value="stamp">Штампованый</option>
+											<option value="nostamp">не штампованый</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Диаметр:</div>
+										<select name="diametr" class="select select_small">
+											<option value="65">65</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">PCD:</div>
+										<select name="PCD" class="select select_small">
+											<option value="r15">R15</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Dia (ступица):</div>
+										<select name="dia" class="select select_small">
+											<option value="any">Любая</option>
+											<option value="notany">Не любая</option>
+										</select>
+									</li>
+								</ul>
+								<ul class="tab-right__list">
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Ширина:</div>
+										<select name="width_to" class="select select_small">
+											<option value="65">65</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Вылет:</div>
+										<select name="disk_of" class="select select_small">
+											<option value="r15">R15</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="dropdown tab-right__drop-list-drop-container">
+											<div class="tab-right__item-title">Производитель:</div>
+											<a href="#" class="dropdown-toggle tab-right__drop-list-btn">выберите из списка</a>
+											<div class="dropdown-menu">
+												<form action="#" class="tab-selection-form">
+													<a href="#" class="tab-dropdown-close-btn">закрыть</a>
+													<div class="tab-dropdown-top">
+														<label class="producer-check-label">
+															<input type="checkbox" name="allproducer" class="producer-check-input-checkbox">
+															<div class="producer-check-label-text producer-check-label-text_bold">Все производители</div>
+														</label>
+													</div>
+													<div class="row">
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="col-sm-3">
+															<ul class="drop-pruducer-list">
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BARUM</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BFGOODRICH</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">BRIDGESTONE</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CONTINENTAL</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">COOPER</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">CORDIANT</div>
+																	</label>
+																</li>
+																<li class="drop-producer-item">
+																	<label class="producer-check-label">
+																		<input type="checkbox" name="producer" class="producer-check-input-checkbox">
+																		<div class="producer-check-label-text">DUNLOP</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="tab-dropdown-bottom">
+														<a href="#" class="tab-dropdown-clear-btn">очистить</a>
+														<a href="#" class="tab-dropdown-choose-btn btn_red">выбрать</a>
+													</div>
+												</form>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="tab-right__drop-list">
+									<a href="#" class="tab-pane__pick-up-btn btn_red">Подобрать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane row tab-model" id="model">
+						<div class="col-sm-4 tab-pane__left-container hidden-xs">
+							<div class="tab-pane__left">
+								<div class="tab-pane__left-img-container img-container">
+									<img src="../images/car.png" alt="img" class="img-responsive tab-pane__left-img img-car">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-8 col-sm-offset-4">
+							<div class="tab-pane__right">
+								<ul class="tab-right__list">
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Марка:</div>
+										<select name="mark" class="select select_normal">
+											<option value="195">195</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Модель:</div>
+										<select name="model" class="select select_normal">
+											<option value="65">65</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Год выпуска:</div>
+										<select name="year" class="select select_normal">
+											<option value="any">любая</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+										</select>
+									</li>
+									<li class="tab-right__item">
+										<div class="tab-right__item-title">Модификация:</div>
+										<select name="modification" class="select select_normal">
+											<option value="any">любая</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+										</select>
+									</li>
+									<li class="tab-right__item tab-right__item_flex">
+										<a href="#" class="tab-pane__pick-up-btn btn_red tab-pane__pick-up-btn_flex">Подобрать</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="cards-page-block">
+			<section class="breadcrubms-block">
+				<div class="container">
+					<ul class="breadcrubms-block__list">
+						<li class="breadcrubms-block__item">
+							<a href="#" class="breadcrubms-block__link">Главная</a>
+						</li>
+						<li class="breadcrubms-block__item">
+							<a href="#" class="breadcrubms-block__link">Диски</a>
+						</li>
+					</ul>
+				</div>
+			</section>	
+
+			<div class="container">
+				<h1 class="cards-page__title">
+					Автомобильные диски
+				</h1>
+				<ul class="cards-page__list cards-page__list_discs">
+					<li class="cards-page__item special">
+						<div class="cards-page__left">
+							<div class="cards-page__left-top">
+								<h1 class="card-block__title">skad</h1>
+								<div class="card-block__description">Форвард</div>
+								<div class="card-block__info">
+									<div class="card-block__info-details">Чёрный матовый с проточкой</div>
+									<ul class="card-block__info-list">
+										<li class="card-block__info-item">Литой</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cards-page__left-bottom">
+								<div class="cards-page__left-bottom-col_1">
+									<div class="basket-block__img-container img-container">
+										<img src="../images/disk_img.png" alt="img" class="basket-block__img img-responsive">
+									</div>
+								</div>
+								<div class="cards-page__left-bottom-col_2">
+									<div class="cards-page__left-bottom-col_2-container">
+										<ul class="card-block__right-bottom-list">
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Размер:</div>
+												<div class="card-block__right-bottom-item-right">6 x 15"</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">PCD:</div>
+												<div class="card-block__right-bottom-item-right">4/100</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Вылет (ЕТ):</div>
+												<div class="card-block__right-bottom-item-right">45</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Ступица (DIA):</div>
+												<div class="card-block__right-bottom-item-right">61.7</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Страна пр-ва:</div>
+												<div class="card-block__right-bottom-item-right">Южная Корея <img src="../images/flag.png" class="card-block__img-flag" alt="img"></div>
+											</li>
+										</ul>
+										<div class="cards-page__price hidden-sm hidden-xs">
+											<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+											<div class="card-block__right-center-middle-price">
+												<span class="card-block__right-center-middle_red">80.41</span>
+												<span class="card-block__right-center-middle_black">руб</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-page__right">
+							<div class="cards-page__right-top">
+								<div class="cards-page__right-top-title">Доставка</div>
+								<div class="cards-page__right-top-title">Гарантия</div>	
+							</div>
+							<div class="cards-page__right-center">
+								<div class="cards-page__right-col_1">
+									<div class="card-block__right-title">Доступно:</div>
+									<div class="card-block__right-sub">
+										<div class="card-block__right-availability-container">
+											<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-page__right-col_2">
+									<div class="basket-block__item-rigth-bottom-item-title">Кол-во</div>
+									<select name="hits_count" class="select hits-select card-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="cards-page__right-bottom">
+								<div class="cards-page__price visible-sm visible-xs">
+									<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+									<div class="card-block__right-center-middle-price">
+										<span class="card-block__right-center-middle_red">80.41</span>
+										<span class="card-block__right-center-middle_black">руб</span>
+									</div>
+								</div>
+								<a href="#" class="cards-page__buy-btn btn_red">Купить</a>
+							</div>
+						</div>
+					</li>
+					<li class="cards-page__item hit">
+						<div class="cards-page__left">
+							<div class="cards-page__left-top">
+								<h1 class="card-block__title">skad</h1>
+								<div class="card-block__description">Форвард</div>
+								<div class="card-block__info">
+									<div class="card-block__info-details">Чёрный матовый с проточкой</div>
+									<ul class="card-block__info-list">
+										<li class="card-block__info-item">Литой</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cards-page__left-bottom">
+								<div class="cards-page__left-bottom-col_1">
+									<div class="basket-block__img-container img-container">
+										<img src="../images/disk_img.png" alt="img" class="basket-block__img img-responsive">
+									</div>
+								</div>
+								<div class="cards-page__left-bottom-col_2">
+									<div class="cards-page__left-bottom-col_2-container">
+										<ul class="card-block__right-bottom-list">
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Размер:</div>
+												<div class="card-block__right-bottom-item-right">6 x 15"</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">PCD:</div>
+												<div class="card-block__right-bottom-item-right">4/100</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Вылет (ЕТ):</div>
+												<div class="card-block__right-bottom-item-right">45</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Ступица (DIA):</div>
+												<div class="card-block__right-bottom-item-right">61.7</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Страна пр-ва:</div>
+												<div class="card-block__right-bottom-item-right">Южная Корея <img src="../images/flag.png" class="card-block__img-flag" alt="img"></div>
+											</li>
+										</ul>
+										<div class="cards-page__price hidden-sm hidden-xs">
+											<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+											<div class="card-block__right-center-middle-price">
+												<span class="card-block__right-center-middle_red">80.41</span>
+												<span class="card-block__right-center-middle_black">руб</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-page__right">
+							<div class="cards-page__right-top">
+								<div class="cards-page__right-top-title">Доставка</div>
+								<div class="cards-page__right-top-title">Гарантия</div>	
+							</div>
+							<div class="cards-page__right-center">
+								<div class="cards-page__right-col_1">
+									<div class="card-block__right-title">Доступно:</div>
+									<div class="card-block__right-sub">
+										<div class="card-block__right-availability-container">
+											<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-page__right-col_2">
+									<div class="basket-block__item-rigth-bottom-item-title">Кол-во</div>
+									<select name="hits_count" class="select hits-select card-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="cards-page__right-bottom">
+								<div class="cards-page__price visible-sm visible-xs">
+									<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+									<div class="card-block__right-center-middle-price">
+										<span class="card-block__right-center-middle_red">80.41</span>
+										<span class="card-block__right-center-middle_black">руб</span>
+									</div>
+								</div>
+								<a href="#" class="cards-page__buy-btn btn_red">Купить</a>
+							</div>
+						</div>
+					</li>
+					<li class="cards-page__item new">
+						<div class="cards-page__left">
+							<div class="cards-page__left-top">
+								<h1 class="card-block__title">skad</h1>
+								<div class="card-block__description">Форвард</div>
+								<div class="card-block__info">
+									<div class="card-block__info-details">Чёрный матовый с проточкой</div>
+									<ul class="card-block__info-list">
+										<li class="card-block__info-item">Литой</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cards-page__left-bottom">
+								<div class="cards-page__left-bottom-col_1">
+									<div class="basket-block__img-container img-container">
+										<img src="../images/disk_img.png" alt="img" class="basket-block__img img-responsive">
+									</div>
+								</div>
+								<div class="cards-page__left-bottom-col_2">
+									<div class="cards-page__left-bottom-col_2-container">
+										<ul class="card-block__right-bottom-list">
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Размер:</div>
+												<div class="card-block__right-bottom-item-right">6 x 15"</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">PCD:</div>
+												<div class="card-block__right-bottom-item-right">4/100</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Вылет (ЕТ):</div>
+												<div class="card-block__right-bottom-item-right">45</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Ступица (DIA):</div>
+												<div class="card-block__right-bottom-item-right">61.7</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Страна пр-ва:</div>
+												<div class="card-block__right-bottom-item-right">Южная Корея <img src="../images/flag.png" class="card-block__img-flag" alt="img"></div>
+											</li>
+										</ul>
+										<div class="cards-page__price hidden-sm hidden-xs">
+											<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+											<div class="card-block__right-center-middle-price">
+												<span class="card-block__right-center-middle_red">80.41</span>
+												<span class="card-block__right-center-middle_black">руб</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-page__right">
+							<div class="cards-page__right-top">
+								<div class="cards-page__right-top-title">Доставка</div>
+								<div class="cards-page__right-top-title">Гарантия</div>	
+							</div>
+							<div class="cards-page__right-center">
+								<div class="cards-page__right-col_1">
+									<div class="card-block__right-title">Доступно:</div>
+									<div class="card-block__right-sub">
+										<div class="card-block__right-availability-container">
+											<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-page__right-col_2">
+									<div class="basket-block__item-rigth-bottom-item-title">Кол-во</div>
+									<select name="hits_count" class="select hits-select card-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="cards-page__right-bottom">
+								<div class="cards-page__price visible-sm visible-xs">
+									<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+									<div class="card-block__right-center-middle-price">
+										<span class="card-block__right-center-middle_red">80.41</span>
+										<span class="card-block__right-center-middle_black">руб</span>
+									</div>
+								</div>
+								<a href="#" class="cards-page__buy-btn btn_red">Купить</a>
+							</div>
+						</div>
+					</li>
+					<li class="cards-page__item sale">
+						<div class="cards-page__left">
+							<div class="cards-page__left-top">
+								<h1 class="card-block__title">skad</h1>
+								<div class="card-block__description">Форвард</div>
+								<div class="card-block__info">
+									<div class="card-block__info-details">Чёрный матовый с проточкой</div>
+									<ul class="card-block__info-list">
+										<li class="card-block__info-item">Литой</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cards-page__left-bottom">
+								<div class="cards-page__left-bottom-col_1">
+									<div class="basket-block__img-container img-container">
+										<img src="../images/disk_img.png" alt="img" class="basket-block__img img-responsive">
+									</div>
+								</div>
+								<div class="cards-page__left-bottom-col_2">
+									<div class="cards-page__left-bottom-col_2-container">
+										<ul class="card-block__right-bottom-list">
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Размер:</div>
+												<div class="card-block__right-bottom-item-right">6 x 15"</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">PCD:</div>
+												<div class="card-block__right-bottom-item-right">4/100</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Вылет (ЕТ):</div>
+												<div class="card-block__right-bottom-item-right">45</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Ступица (DIA):</div>
+												<div class="card-block__right-bottom-item-right">61.7</div>
+											</li>
+											<li class="card-block__right-bottom-item">
+												<div class="card-block__right-bottom-item-left">Страна пр-ва:</div>
+												<div class="card-block__right-bottom-item-right">Южная Корея <img src="../images/flag.png" class="card-block__img-flag" alt="img"></div>
+											</li>
+										</ul>
+										<div class="cards-page__price hidden-sm hidden-xs">
+											<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+											<div class="card-block__right-center-middle-price">
+												<span class="card-block__right-center-middle_red">80.41</span>
+												<span class="card-block__right-center-middle_black">руб</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-page__right">
+							<div class="cards-page__right-top">
+								<div class="cards-page__right-top-title">Доставка</div>
+								<div class="cards-page__right-top-title">Гарантия</div>	
+							</div>
+							<div class="cards-page__right-center">
+								<div class="cards-page__right-col_1">
+									<div class="card-block__right-title">Доступно:</div>
+									<div class="card-block__right-sub">
+										<div class="card-block__right-availability-container">
+											<div class="card-block__right-availability-inner card-block__right-availability-inner_green" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-page__right-col_2">
+									<div class="basket-block__item-rigth-bottom-item-title">Кол-во</div>
+									<select name="hits_count" class="select hits-select card-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="cards-page__right-bottom">
+								<div class="cards-page__price visible-sm visible-xs">
+									<div class="basket-block__item-rigth-bottom-item-title">За 1 штуку:</div>
+									<div class="card-block__right-center-middle-price">
+										<span class="card-block__right-center-middle_red">80.41</span>
+										<span class="card-block__right-center-middle_black">руб</span>
+									</div>
+								</div>
+								<a href="#" class="cards-page__buy-btn btn_red">Купить</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="cards-page__pagination-list">
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link"></a>
+					</li>
+					<li class="cards-page__pagination-item active">
+						<a href="#" class="cards-page__pagination-link">1</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link">2</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link">...</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link">34</a>
+					</li>
+					<li class="cards-page__pagination-item">
+						<a href="#" class="cards-page__pagination-link"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="seo-block">
+			<div class="container">
+				<div class="seo-block-container">
+					<article class="seo-block__article">
+						<div class="seo-block__aticle-col_left">
+							<h2 class="seo-block__title_h3">Летние шины</h2>
+							<ul class="seo-block__index-list">
+								<li class="seo-block__index-item">R13</li>
+								<li class="seo-block__index-item">R13C</li>
+								<li class="seo-block__index-item">R14</li>
+								<li class="seo-block__index-item">R14C</li>
+								<li class="seo-block__index-item">R15</li>
+								<li class="seo-block__index-item">R15C</li>
+								<li class="seo-block__index-item">R16</li>
+								<li class="seo-block__index-item">R16C</li>
+								<li class="seo-block__index-item">R17</li>
+								<li class="seo-block__index-item">R18</li>
+								<li class="seo-block__index-item">R19</li>
+								<li class="seo-block__index-item">R20</li>
+								<li class="seo-block__index-item">R21</li>
+							</ul>
+						</div>
+						<div class="seo-block__aticle-col_right">
+							<h2 class="seo-block__title_h3">Зимние шины</h2>
+							<ul class="seo-block__index-list">
+								<li class="seo-block__index-item">R13</li>
+								<li class="seo-block__index-item">R13C</li>
+								<li class="seo-block__index-item">R14</li>
+								<li class="seo-block__index-item">R14C</li>
+								<li class="seo-block__index-item">R15</li>
+								<li class="seo-block__index-item">R15C</li>
+								<li class="seo-block__index-item">R16</li>
+								<li class="seo-block__index-item">R16C</li>
+								<li class="seo-block__index-item">R17</li>
+								<li class="seo-block__index-item">R18</li>
+								<li class="seo-block__index-item">R19</li>
+								<li class="seo-block__index-item">R20</li>
+								<li class="seo-block__index-item">R21</li>
+							</ul>
+						</div>
+					</article>
+					<article class="seo-block__article">
+						<h2 class="seo-block__title_h3">Производители автомобильных шин</h2>
+						<ul class="seo-block__brands-list">
+							<li class="seo-block__brands-item">AVON</li>
+							<li class="seo-block__brands-item">BARUM</li>
+							<li class="seo-block__brands-item">BFGOODRICH</li>
+							<li class="seo-block__brands-item">BRIDGESTONE</li>
+							<li class="seo-block__brands-item">CONTINENTAL</li>
+							<li class="seo-block__brands-item">COOPER</li>
+							<li class="seo-block__brands-item">DIPLOMAT</li>
+							<li class="seo-block__brands-item">DUNLOP</li>
+							<li class="seo-block__brands-item">FULDA</li>
+							<li class="seo-block__brands-item">FORMULA</li>
+							<li class="seo-block__brands-item">GENERAL</li>
+							<li class="seo-block__brands-item">GISLAVED</li>
+							<li class="seo-block__brands-item">GOODYEAR</li>
+							<li class="seo-block__brands-item">HANKOOK</li>
+							<li class="seo-block__brands-item">IMPERIAL</li>
+							<li class="seo-block__brands-item">INFINITY</li>
+							<li class="seo-block__brands-item">KINGSTAR</li>
+							<li class="seo-block__brands-item">LINGLONG</li>
+							<li class="seo-block__brands-item">MATADOR</li>
+							<li class="seo-block__brands-item">MAXXIS</li>
+							<li class="seo-block__brands-item">MICHELIN</li>
+							<li class="seo-block__brands-item">NOKIAN</li>
+							<li class="seo-block__brands-item">PIRELLI</li>
+							<li class="seo-block__brands-item">PREMIORRI</li>
+							<li class="seo-block__brands-item">ROADSTONE</li>
+							<li class="seo-block__brands-item">SAILUN</li>
+							<li class="seo-block__brands-item">SAVA</li>
+							<li class="seo-block__brands-item">TAURUS</li>
+							<li class="seo-block__brands-item">TIGAR</li>
+							<li class="seo-block__brands-item">TOYO</li>
+							<li class="seo-block__brands-item">WANLI</li>
+							<li class="seo-block__brands-item">YOKOHAMA</li>
+							<li class="seo-block__brands-item">АМТЕЛ</li>
+							<li class="seo-block__brands-item">КАМА</li>
+							<li class="seo-block__brands-item">РОСАВА</li>
+							<li class="seo-block__brands-item">CORDIANT</li>
+							<li class="seo-block__brands-item">VIATTI</li>
+							<li class="seo-block__brands-item">NITTO</li>
+							<li class="seo-block__brands-item">TUNGA</li>
+							<li class="seo-block__brands-item">КИРОВСКИЙ ШИННЫЙ ЗАВОД </li>
+							<li class="seo-block__brands-item">LAUFENN</li>
+						</ul>
+					</article>
+					<article class="seo-block__article">
+						<h3 class="seo-block__title_h3">Шины в интернет-магазине Aset.by</h3>
+						<div class="seo-block__description">
+							<p>
+								Интернет-магазин Aset.by предлагает широкий ассортимент автомобильных шин, а также дисков и аккумуляторов. Мы придерживаемся строгих требований к качеству товаров и внимательно относимся к работе с клиентами.
+								На сайте представлено более 500 моделей летних, зимних и всесезонных шин от ведущих мировых брендов. Наши специалисты помогут быстро подобрать и купить шины в Минске и всей Беларуси.Мы следим за анонсами производителей автошин, пополняем каталог новыми моделями и расширяем линейку типоразмеров.
+							</p>
+							<p>
+								Качество подтверждено сертификатами соответствия, гарантия от брака действительна в течение 24 месяцев с момента покупки.
+							</p>
+						</div>
+					</article>
+					<div class="seo-block__bottom">
+						<h4 class="seo-block__title_h4">Наиболее популярные города доставки</h4>
+						<div class="seo-block__bottom-items">
+							<ul class="seo-block__popular-list">
+								<li class="seo-block__popular-item">
+									Брест       
+								</li>
+								<li class="seo-block__popular-item">
+									Витебск       
+								</li>
+								<li class="seo-block__popular-item">
+									Гомель       
+								</li>
+								<li class="seo-block__popular-item">
+									Гродно       
+								</li>
+								<li class="seo-block__popular-item">
+									Могилев       
+								</li>
+							</ul>
+							<ul class="seo-block__popular-list">
+								<li class="seo-block__popular-item">
+									Бобруйск              
+								</li>
+								<li class="seo-block__popular-item">
+									Барановичи              
+								</li>
+								<li class="seo-block__popular-item">
+									Береза              
+								</li>
+								<li class="seo-block__popular-item">
+									Борисов              
+								</li>
+								<li class="seo-block__popular-item">
+									Волковыск              
+								</li>
+							</ul>
+							<ul class="seo-block__popular-list">
+								<li class="seo-block__popular-item">
+									Брест       
+								</li>
+								<li class="seo-block__popular-item">
+									Витебск       
+								</li>
+								<li class="seo-block__popular-item">
+									Гомель       
+								</li>
+								<li class="seo-block__popular-item">
+									Гродно       
+								</li>
+								<li class="seo-block__popular-item">
+									Могилев       
+								</li>
+							</ul>
+							<ul class="seo-block__popular-list">
+								<li class="seo-block__popular-item">
+									Ганцевичи              
+								</li>
+								<li class="seo-block__popular-item">
+									Горки              
+								</li>
+								<li class="seo-block__popular-item">
+									Давид-Городок         
+								</li>
+								<li class="seo-block__popular-item">
+									Смолевичи       
+								</li>
+								<li class="seo-block__popular-item">
+									Слуцк            
+								</li>
+							</ul>
+							<ul class="seo-block__popular-list">
+								<li class="seo-block__popular-item">
+									Брест       
+								</li>
+								<li class="seo-block__popular-item">
+									Витебск       
+								</li>
+								<li class="seo-block__popular-item">
+									Гомель       
+								</li>
+								<li class="seo-block__popular-item">
+									Гродно       
+								</li>
+								<li class="seo-block__popular-item">
+									Могилев       
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top__col">
+					<a href="#" class="footer-top__logo hidden-xs">АВТОКОЛЁСА</a>
+					<div class="footer-top__title">Наши офисы:</div>
+					<ul class="footer-top__adress-list">
+						<li class="footer-top__adress-item">
+							<p>г.Минск: ул.Мележа, 1А</p>
+							<p>686-86-86 МТС, Velcom, Life</p>
+						</li>
+						<li class="footer-top__adress-item">
+							<p>г.Могилев: ул.Строителей, 21</p>
+							<p>+375 (222) 23-49-49</p>
+						</li>
+					</ul>	
+				</div>
+				<div class="footer-top__col footer-top__col_wheels hidden-xs">
+					<div class="footer-top__title">Шины</div>
+					<ul class="footer-top__items-list">
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по параметрам</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по марке авто</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">летние шины</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">зимние шины</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">шинный калькулятор</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-top__col footer-top__col_disks hidden-xs">
+					<div class="footer-top__title">Диски</div>
+					<ul class="footer-top__items-list">
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по параметрам</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">по марке авто</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">летние диски</a>
+						</li>
+						<li class="footer-top__items-item">
+							<a href="#" class="footer-top__items-link">штампованные диски</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-top__col hidden-xs">
+					<nav class="footer-top__nav">
+						<ul class="footer-top__nav-list">
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Новости</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Доставка</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Оплата</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Гарантии</div>
+								</a>
+							</li>
+							<li class="footer-top__nav-item">
+								<a href="#" class="footer-top__nav-link">
+									<div class="footer-top__title">Контакты</div>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-bottom clearfix">
+				<div class="footer-bottom__copy pull-left">
+					© 2012-2017 Интернет-магазин
+				</div>
+				<div class="footer-bottom__buttons pull-right hidden-xs">
+					<a href="#" class="footer-bottom__btn">VISA</a>
+					<a href="#" class="footer-bottom__btn">ЕРИП</a>
+					<a href="#" class="footer-bottom__btn">PAYPAL</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/select2.full.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/pluginsForCircleJs.js"></script>
+	<script src="../js/circletype.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
