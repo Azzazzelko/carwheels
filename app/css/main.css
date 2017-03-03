@@ -1487,6 +1487,9 @@ body {
   .tab-paramerts_disks .tab-pane__left-img-container {
     max-width: 100%;
   }
+  .tab-paramerts_disks .tab-right__drop-list-drop-container .dropdown-menu {
+    left: -413px;
+  }
 }
 /* xs+sm+md */
 @media screen and (max-width: 1199px) {
@@ -1554,13 +1557,24 @@ body {
   }
 
   .tab-paramerts_disks .tab-pane__right {
-    padding-right: 90px;
+    padding-right: 0;
   }
   .tab-paramerts_disks .tab-right__drop-list-btn, .tab-paramerts_disks .tab-right__drop-list-btn:hover, .tab-paramerts_disks .tab-right__drop-list-btn:focus {
     width: 320px;
   }
   .tab-paramerts_disks .select_big + .select2-container {
     width: 252px !important;
+  }
+  .tab-paramerts_disks .select_small + .select2-container {
+    width: 140px !important;
+  }
+  .tab-paramerts_disks .tab-right__drop-list-btn,
+  .tab-paramerts_disks .tab-right__drop-list-btn:hover,
+  .tab-paramerts_disks .tab-right__drop-list-btn:focus {
+    width: 300px;
+  }
+  .tab-paramerts_disks .tab-right__drop-list-drop-container .dropdown-menu {
+    left: -450px;
   }
 }
 /* xs+sm */
@@ -1573,6 +1587,22 @@ body {
   }
   .tab-paramerts_disks .select_big + .select2-container {
     width: 470px !important;
+  }
+  .tab-paramerts_disks .select_small + .select2-container {
+    width: 225px !important;
+  }
+  .tab-paramerts_disks .tab-right__drop-list {
+    position: absolute;
+    right: 15px;
+    margin-top: -78px;
+  }
+  .tab-paramerts_disks .tab-pane__left-img.img-disk {
+    margin-left: -30px;
+    width: 100%;
+    padding-bottom: 130px;
+  }
+  .tab-paramerts_disks .tab-right__drop-list-drop-container .dropdown-menu {
+    left: -265px;
   }
 
   .container {
@@ -2092,8 +2122,26 @@ body {
   }
 
   .select_small + .select2-container,
-  .select_normal + .select2-container {
+  .select_normal + .select2-container,
+  .tab-paramerts_disks .select_small + .select2-container {
     width: 100% !important;
+  }
+
+  .tab-paramerts_disks .tab-right__drop-list {
+    position: initial;
+    margin-top: 0;
+  }
+  .tab-paramerts_disks .tab-pane__pick-up-btn, .tab-paramerts_disks .tab-pane__pick-up-btn:hover, .tab-paramerts_disks .tab-pane__pick-up-btn:focus {
+    margin-top: 5px;
+  }
+  .tab-paramerts_disks .tab-right__drop-list-btn,
+  .tab-paramerts_disks .tab-right__drop-list-btn:hover,
+  .tab-paramerts_disks .tab-right__drop-list-btn:focus {
+    width: 100%;
+  }
+  .tab-paramerts_disks .tab-right__drop-list-drop-container .dropdown-menu {
+    width: 100%;
+    left: 0;
   }
 
   .tab-right__drop-list-btn, .tab-right__drop-list-btn:hover, .tab-right__drop-list-btn:focus {
