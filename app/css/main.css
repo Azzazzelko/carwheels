@@ -666,8 +666,8 @@ body {
   margin-left: -80px;
 }
 .tab-pane__left-img.img-disk {
-  padding-bottom: 20px;
-  max-width: none;
+  padding-bottom: 40px;
+  max-width: inherit;
 }
 
 .producer-check-label {
@@ -1452,6 +1452,8 @@ body {
 
   .tab-pane__left-img.img-disk {
     margin-left: 0px;
+    width: 90%;
+    padding-left: 35px;
   }
 
   .slogan-block .container {
@@ -1482,24 +1484,8 @@ body {
   .tab-paramerts_disks .tab-right__drop-list {
     justify-content: flex-end;
   }
-
-  .tab-paramerts_disks .tab-right__list {
-    background: #ddd;
-    margin-top: -15px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .tab-paramerts_disks .tab-right__drop-list {
-    margin-top: 15px;
-  }
-  .tab-paramerts_disks .select_small + .select2-container {
-    width: 155px !important;
-  }
-  .tab-paramerts_disks .tab-right__drop-list-btn,
-  .tab-paramerts_disks .tab-right__drop-list-btn:hover,
-  .tab-paramerts_disks .tab-right__drop-list-btn:focus {
-    width: 323px;
+  .tab-paramerts_disks .tab-pane__left-img-container {
+    max-width: 100%;
   }
 }
 /* xs+sm+md */
@@ -2127,6 +2113,10 @@ body {
   .tab-right__drop-list-drop-container .dropdown-menu {
     width: 100%;
     left: 0;
+  }
+
+  .selection-tabs-item {
+    vertical-align: top;
   }
 
   .drop-pruducer-list {

@@ -53,6 +53,8 @@
 
 	.tab-pane__left-img.img-disk {
 		margin-left: 0px;
+		width: 90%;
+		padding-left: 35px;
 	}
 
 	.slogan-block .container {
@@ -87,31 +89,12 @@
 		.tab-right__drop-list {
 			justify-content: flex-end;
 		}
-	}
 
-	.tab-paramerts_disks {
-		.tab-right__list {
-			background: #ddd;
-			margin-top: -15px;
-			padding-top: 15px;
-			padding-right: 15px;
-			padding-left: 15px;
-		}
-
-		.tab-right__drop-list {
-			margin-top: 15px;
-		}
-
-		.select_small + .select2-container {
-			width: 155px !important;
-		}
-
-		.tab-right__drop-list-btn, 
-		.tab-right__drop-list-btn:hover, 
-		.tab-right__drop-list-btn:focus {
-			width: 323px;
+		.tab-pane__left-img-container {
+			max-width: 100%;
 		}
 	}
+
 }
 
 /* xs+sm+md */
@@ -424,12 +407,6 @@
 	.tab-right__drop-list {
 		flex-wrap: wrap;
 	}
-
-
-
-
-
-
 
 	.header-top__info-description {
 		font-size: 14px;
@@ -766,6 +743,10 @@
 	.tab-right__drop-list-drop-container .dropdown-menu {
 		width: 100%;
 		left: 0;
+	}
+
+	.selection-tabs-item {
+		vertical-align: top;
 	}
 
 	.drop-pruducer-list {

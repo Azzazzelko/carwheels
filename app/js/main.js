@@ -54,4 +54,9 @@ $(function() {
 		$('.wheel-circle-text').circleType({radius: 200});
 	}
 	
+	/* all sizes btn */
+	$('.card-block__info-sizes-btn').on('click', function(e){
+		$('a[href=#sizes]').click();
+	});
+
 }());
