@@ -1788,6 +1788,14 @@ body {
 }
 /* xs */
 @media screen and (max-width: 767px) {
+  .help-modal__dialog {
+    width: 292px;
+  }
+
+  .help-modal__img {
+    margin: 0 auto;
+  }
+
   .container {
     width: auto;
   }
@@ -2428,14 +2436,14 @@ body {
   }
 
   .help-modal__btn, .help-modal__btn:hover, .help-modal__btn:focus {
-    top: -25px;
+    top: 0;
     right: 5px;
     background: none;
-    color: #fff;
+    font-size: 14px;
   }
 
   .help-modal {
-    padding-top: 50px;
+    padding-top: 20px;
   }
 }
 .basket-block {
@@ -3136,6 +3144,7 @@ body {
 }
 
 .card-block__info-details {
+  line-height: 1;
   font-size: 20px;
   color: #212832;
   display: inline-block;
@@ -4206,8 +4215,8 @@ body {
 }
 .cards-page__item .card-block__info-item {
   line-height: 1;
-  padding: 2px 10px;
-  border-radius: 0;
+  padding: 1px 4px;
+  border-radius: 5px;
 }
 .cards-page__item .cards-page__price {
   padding-top: 28px;
@@ -4588,7 +4597,7 @@ body {
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 0;
-    padding: 2px 8px;
+    padding: 1px 4px;
   }
   .cards-page__item .card-block__info-details {
     margin-right: 0;
@@ -4641,6 +4650,12 @@ body {
   .cards-page__list_discs .card-block__info-item {
     margin-bottom: 0;
   }
+}
+.news-page_news-block {
+  padding: 0;
+}
+.news-page_news-block .news-block__list {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

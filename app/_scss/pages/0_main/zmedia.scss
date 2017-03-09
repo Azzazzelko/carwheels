@@ -418,6 +418,14 @@
 
 /* xs */
 @media screen and (max-width: 767px) {
+	.help-modal__dialog {
+		width: 292px;
+	}
+
+	.help-modal__img {
+		margin: 0 auto;
+	}
+
 	.container {
 		width: auto;
 	}
@@ -1078,14 +1086,14 @@
 	}
 
 	.help-modal__btn, .help-modal__btn:hover, .help-modal__btn:focus {
-		top: -25px;
+		top: 0;
 		right: 5px;
 		background: none;
-		color: #fff;
+		font-size: 14px;
 	}
 
 	.help-modal {
-		padding-top: 50px;
+		padding-top: 20px;
 	}
 
 
