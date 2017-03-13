@@ -274,10 +274,10 @@
 	margin-right: 14px;
 	width: 35px;
 	height: 35px;
-	border-radius: 50%;
+	border-radius: 5px;
 	background: #fff;
-	border: 2px solid $blue;
-	color: $blue;
+	border: 2px solid $black;
+	color: $black;
 	font-size: 16px;
 	@include font(bold);
 	text-align: center;
@@ -288,21 +288,21 @@
 	&:last-child {
 		margin-right: 0;
 
-		&:before {
+		.cards-page__pagination-link:before {
 			@extend %center;
-			@include get-sprite($main-spr, arrow-right_blue);	
+			@include get-sprite($main-spr, arrow-right_black);	
 		}
 	}
 
 	&:first-child {
-		&:before {
+		.cards-page__pagination-link:before {
 			@extend %center;
-			@include get-sprite($main-spr, arrow-left_blue);	
+			@include get-sprite($main-spr, arrow-left_black);	
 		}
 	}
 
 	&.active {
-		background: $blue;
+		background: $black;
 		color: #fff;
 	}
 }

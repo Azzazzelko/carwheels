@@ -117,7 +117,7 @@
 	font-size: 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .header-nav__item {
@@ -134,14 +134,29 @@
 	color: $orange;
 	text-transform: uppercase;
 	font-size: 18px;
-	padding: 10px 20px;
+	padding: 10px 0;
 	@include font(bold);
+	position: relative;
+
+	&:before {
+		transition: all 0.3s;
+		display: block;
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		border-radius: 3px;
+		background: $orange;
+		bottom: 7px;
+		opacity: 0;
+	}
 
 	&:hover {
-		background: $orange;
-		color: $blue;
-		border-radius: 4px;
-		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+		color: $orange;
+
+		&:before {
+			opacity: 1;
+		}
 	}
 }
 
@@ -273,7 +288,7 @@
 			border-radius: 3px;
 			padding: 0 15px;
 			line-height: 48px;
-			font-size: 16px;
+			font-size: 18px;
 			@include font(bold);
 			color:black;
 			text-transform: uppercase;
@@ -355,7 +370,7 @@
 }
 
 .select2-container--default .select2-results>.select2-results__options {
-	max-height: 400px;
+	max-height: 255px;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
@@ -475,12 +490,17 @@
 	position: relative;
 	border-radius: 3px;
 	padding: 0 15px;
-	font-size: 16px;
+	font-size: 18px;
 	@include font(bold);
 	color:black;
 	text-transform: uppercase;
 	background: #fff;
 	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+	padding-right: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
 
 	&:before {
 		transition: all 0.3s;
@@ -570,7 +590,7 @@
 	}
 
 	&.img-car {
-		padding-bottom: 30px;
+		padding-bottom: 25px;
 		max-width: none;
 		margin-left: -80px;
 	}
