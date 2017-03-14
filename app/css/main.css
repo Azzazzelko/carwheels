@@ -4427,6 +4427,7 @@ body {
 }
 
 .wheel-circle-text {
+  height: 95px !important;
   bottom: 80px;
   left: 160px;
   transform: rotate(-37deg);
@@ -4465,6 +4466,7 @@ body {
     bottom: 95px;
     left: 66px;
     transform: rotate(-30deg);
+    font-size: 24px;
   }
 
   .cards-page__item {
