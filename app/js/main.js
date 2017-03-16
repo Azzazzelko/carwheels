@@ -69,7 +69,7 @@ $(function() {
 			$("#wheel-circle-text").html(sel1 + '&nbsp;/&nbsp;' + sel2 + '&nbsp;R' + sel3);
 		}
 
-		$('#wheel-circle-text').circleType({radius: 200});
+		$('#wheel-circle-text').circleType({radius: 245});
 
 		/* on change */
 		$('#selWidth').on('change', function(){
@@ -84,7 +84,7 @@ $(function() {
 			{
 				$("#wheel-circle-text").html(sel1 + '&nbsp;/&nbsp;' + sel2 + '&nbsp;R' + sel3);
 			}
-			$('#wheel-circle-text').circleType({radius: 200});
+			$('#wheel-circle-text').circleType({radius: 245});
 		});
 		$('#selHeight').on('change', function(){
 			var sel1 = $('#selWidth').val();
@@ -98,7 +98,7 @@ $(function() {
 			{
 				$("#wheel-circle-text").html(sel1 + '&nbsp;/&nbsp;' + sel2 + '&nbsp;R' + sel3);
 			}
-			$('#wheel-circle-text').circleType({radius: 200});
+			$('#wheel-circle-text').circleType({radius: 245});
 		});
 		$('#selDiameter').on('change', function(){
 			var sel1 = $('#selWidth').val();
@@ -112,7 +112,7 @@ $(function() {
 			{
 				$("#wheel-circle-text").html(sel1 + '&nbsp;/&nbsp;' + sel2 + '&nbsp;R' + sel3);
 			}
-			$('#wheel-circle-text').circleType({radius: 200});
+			$('#wheel-circle-text').circleType({radius: 245});
 		});
 
 		/* hovers */
