@@ -851,32 +851,42 @@
 		min-height: 65px;
 		margin-bottom: 25px;
 
-		&:before {
+		img {
 			left: 0;
 			transform: translateY(-50%);
 			top: 50%;
 		}
 
-		&.advantages-block__item_number-1:before {
-			left: 18px;
+		&.advantages-block__item_number-1 {
+			img {
+				left: 18px;
+			}
 		}
 
-		&.advantages-block__item_proff:before {
-			left: 0;
+		&.advantages-block__item_proff {
+			img {
+				left: 0;
+			}
 		}
 
-		&.advantages-block__item_delivery:before {
-			transform: translateY(-50%) scale(0.8);
-			left: -10px;
+		&.advantages-block__item_delivery {
+			img {
+				transform: translateY(-50%) scale(0.8);
+				left: -10px;
+			}
 		}
 
-		&.advantages-block__item_packets:before {
-			left: 25px;
+		&.advantages-block__item_packets {
+			img {
+				left: 25px;
+			}
 		}
 
-		&.advantages-block__item_garant:before {
-			left: 23px;
-			top: 55%;
+		&.advantages-block__item_garant {
+			img {
+				left: 23px;
+				top: 55%;
+			}
 		}
 	}
 

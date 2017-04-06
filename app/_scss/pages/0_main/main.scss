@@ -746,6 +746,14 @@
 }
 
 .advantages-block__item {
+	img {
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+	}
+}
+
+.advantages-block__item {
 	position: relative;
 	display: inline-block;
 
@@ -755,34 +763,10 @@
 		transform: translateX(-50%);
 	}
 
-	&.advantages-block__item_number-1 {
-		&:before {
-			@include get-sprite($main-spr, number-1);
-		}
-	}
 
 	&.advantages-block__item_proff {
-		&:before {
+		img {
 			left: 45%;
-			@include get-sprite($main-spr, prof-consult);
-		}
-	}
-
-	&.advantages-block__item_delivery {
-		&:before {
-			@include get-sprite($main-spr, dostavka);
-		}
-	}
-
-	&.advantages-block__item_packets {
-		&:before {
-			@include get-sprite($main-spr, packets);
-		}
-	}
-
-	&.advantages-block__item_garant {
-		&:before {
-			@include get-sprite($main-spr, garant);
 		}
 	}
 }

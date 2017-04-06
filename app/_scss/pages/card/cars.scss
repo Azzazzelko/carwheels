@@ -147,10 +147,8 @@
 	font-size: 14px;
 	position: relative;
 
-	&:before {
+	img {
 		display: block;
-		content: "";
-		top: 0;
 		left: 50%;
 		transform: translateX(-50%) scale(0.9);
 		position: absolute;
@@ -161,21 +159,25 @@
 	padding-left: 10px;
 	padding-right: 10px;
 
-	&:before {
-		top: 20px;
-		@include get-sprite($main-spr, delivery-img-card);
+	img {
+		top: 20px;	
 	}
 	
 }
 
-.card-block__icons-item_garant:before {
-	@include get-sprite($main-spr, garant);
+.card-block__icons-item_garant {
+	img {
+		top: 0;
+	}
 }
 
-.card-block__icons-item_packets:before {
-	top: 5px;
-	@include get-sprite($main-spr, packets);
+.card-block__icons-item_packets {
+	img {
+		top: 5px;
+	}
 }
+
+
 
 
 .card-block__right-center {
